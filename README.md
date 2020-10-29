@@ -22,7 +22,27 @@ Team Members:
 
 [GoogleDoc](https://docs.google.com/document/d/1qyXwMCpHjvtyT953FGs_HHTLHkv3G3pF0_bKpM_sebc/edit?usp=sharing)
 
-# GitHub Projects
+# Overview
+
+GreenHouse is an app that allows users to keep track of their energy savings based on the equipment they have purchased for their house. The home page includes options for messaging experts, exploring articles related to environmentally friendly homes and browsing energy/cost/water saving equipment.
+
+For the first iteration, our team will build out the landing page with full CRUD capabilities built around the "articles" feature. The second iteration will include a library of equipment and the dashboard concept.
+
+# Schema
+
+```javascript
+const Article = new Schema(
+  {
+    title: { type: String, required: true },
+    imgURL: { type: String, required: true },
+    content: { type: String, required: true },
+    author: { type: String, required: true },
+  },
+  { timestamps: true }
+);
+```
+
+# MVP
 
 [GreenHouse WorkFlow](https://github.com/suttondemlong/green-house/projects/1)
 
