@@ -9,14 +9,14 @@ Team Members:
 
 # Whimsical
 
-(https://whimsical.com/DAFyM5GeQsxhFRbMy1o3vc)
+[GreenHouse Site-map](https://whimsical.com/DAFyM5GeQsxhFRbMy1o3vc)
 
 # UX Resources
 
-[Zeplin](https://scene.zeplin.io/project/5f833bd744cc2c76806cf9d5)
-[Assets](https://drive.google.com/drive/folders/1oh87-jQwjmIavc8ufYE9hCJsMJByLfWa)
-[Desktop-Mockup](https://www.figma.com/proto/3naVRlnr4qOC9iqisHTDZV/p3b-Mid-Fidelity?node-id=475%3A2&viewport=292%2C1155%2C0.08796175569295883&scaling=min-zoom)
-[Mobile-Mockup](https://www.figma.com/proto/3naVRlnr4qOC9iqisHTDZV/p3b-Mid-Fidelity?node-id=551%3A9927&viewport=611%2C1489%2C0.13151338696479797&scaling=scale-down)
+- [Zeplin](https://scene.zeplin.io/project/5f833bd744cc2c76806cf9d5)
+- [Assets](https://drive.google.com/drive/folders/1oh87-jQwjmIavc8ufYE9hCJsMJByLfWa)
+- [Desktop-Mockup](https://www.figma.com/proto/3naVRlnr4qOC9iqisHTDZV/p3b-Mid-Fidelity?node-id=475%3A2&viewport=292%2C1155%2C0.08796175569295883&scaling=min-zoom)
+- [Mobile-Mockup](https://www.figma.com/proto/3naVRlnr4qOC9iqisHTDZV/p3b-Mid-Fidelity?node-id=551%3A9927&viewport=611%2C1489%2C0.13151338696479797&scaling=scale-down)
 
 # Team Expectations
 
