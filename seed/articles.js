@@ -4,7 +4,7 @@ const Article = require("../models/article");
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 const main = async () => {
-  const article = [
+  const articles = [
     {
       title: "Top 10 DIY Projects to try this weekend",
       imgURL:
