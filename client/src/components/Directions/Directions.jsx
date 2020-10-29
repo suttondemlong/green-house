@@ -9,7 +9,6 @@ function Directions(props) {
       <Options />
       |
       <Options />
-      <hr />
     </div>
   );
 }
