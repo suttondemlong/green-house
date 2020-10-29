@@ -1,0 +1,10 @@
+.nav-bar {
+  display: flex;
+  background-color: #42593e;
+  height: 20vh;
+  color: white;
+}
+
+.nav-search-bar {
+  height: 10px;
+}
