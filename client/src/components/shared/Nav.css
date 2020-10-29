@@ -1,10 +1,27 @@
 .nav-bar {
   display: flex;
   background-color: #42593e;
-  height: 20vh;
+  height: 15vh;
   color: white;
+  justify-content: space-between;
 }
 
 .nav-search-bar {
   height: 10px;
+  margin-top: 4.5%;
+  margin-right: 5%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.links {
+  padding-top: 3%;
+  font-size: 12px;
+}
+
+.app-name {
+  margin-left: 5%;
+  padding-top: 0%;
+  font-size: 30px;
 }
