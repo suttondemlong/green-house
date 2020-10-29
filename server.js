@@ -17,3 +17,5 @@ app.use('/api', articlesRoutes);
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
+
+app.get('/', (req, res) => res.send("This is root!"))
