@@ -1,0 +1,13 @@
+.articles {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-img {
+  height: 250px;
+  width: 250px;
+  margin: 25px;
+}
