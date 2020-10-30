@@ -1,4 +1,5 @@
 import React from 'react';
+import Articles from '../Articles/Articles'
 import Buying from '../../components/Buying/Buying'
 import ChatHomePage from '../../components/ChatHomePage/ChatHomePage'
 import Directions from '../../components/Directions/Directions';
@@ -15,6 +16,7 @@ function Home(props) {
         <HomeImage />
         <Directions />
         <ChatHomePage />
+        <Articles />
         <Buying />
       </div>
       <Footer />
