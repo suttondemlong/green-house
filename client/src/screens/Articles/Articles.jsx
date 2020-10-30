@@ -4,23 +4,32 @@ import { getArticles } from "../../services/articles";
 
 
 function Articles(props) {
+  // const [items, setItems] = useState([])
   const [articles, setArticles] = useState([])
 
+//async await move line 14 above 12
   useEffect(() => {
-    const response = getArticles();
-  })
+    const fetchArticles = async () => {
+      const articles = await getArticles()
+      setArticles(articles)
+    }
+   fetchArticles()
+  }, [])
+ 
+  console.log(articles)
+  console.log(articles[0])
 
-  setArticles(response)
 
   return (
     <div className="article-carousel">
       <h2>What People Are Reading</h2>
-      <div className="">
+      <div className="articles">
         {articles.map((articles) => (
-          <img src={articles.imgURL} alt="Article" />))}
+          <img className="article-img" src={articles.imgURL} alt="Article" />))}
       </div>
     </div>
   );
 }
+
 
 export default Articles;
