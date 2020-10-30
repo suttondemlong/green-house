@@ -10,7 +10,7 @@
 /* Icon is from  Becris flaticon.com*/
 .nav-search-bar {
   height: 10px;
-  margin-top: 4.5%;
+  margin-top: 40%;
   margin-right: 5%;
   background-color: transparent;
   border: 1px solid white;
@@ -24,7 +24,7 @@
 
 .app-name {
   margin-left: 5%;
-  padding-top: 0%;
+  padding-top: 1.5%;
   font-size: 30px;
 }
 
@@ -35,4 +35,9 @@
   padding-top: 4%;
   margin-right: 15px;
   color: white;
+}
+
+.search-icon {
+  height: 50px;
+  width: 50px;
 }
