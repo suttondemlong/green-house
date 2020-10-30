@@ -1,7 +1,8 @@
 import React from 'react';
 import './Nav.css';
+// import { NavLink } from 'react-router-dom'
 import login from '../../../../src/assets/login3.png';
-import glass from '../../../../src/assets/loupe.png'
+// import glass from '../../../../src/assets/loupe.png'
 
 function Nav(props) {
   return (
