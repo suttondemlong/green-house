@@ -5,12 +5,12 @@
   width: 100vw;
   color: white;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* Icon is from  Becris flaticon.com*/
 .nav-search-bar {
   height: 10px;
-  margin-top: 40%;
   margin-right: 5%;
   background-color: transparent;
   border: 1px solid white;
@@ -19,14 +19,12 @@
 
 .links {
   font-family: "Oxygen", sans-serif;
-  padding-top: 3%;
   font-size: 12px;
 }
 
 .app-name {
   font-family: "Noto Serif", serif;
   margin-left: 5%;
-  padding-top: 1.5%;
   font-size: 30px;
 }
 
@@ -34,7 +32,6 @@
 .login-icon {
   height: 25px;
   width: 25px;
-  padding-top: 4%;
   margin-right: 15px;
   color: white;
 }
