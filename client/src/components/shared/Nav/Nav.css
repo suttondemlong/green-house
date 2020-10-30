@@ -18,11 +18,13 @@
 }
 
 .links {
+  font-family: "Oxygen", sans-serif;
   padding-top: 3%;
   font-size: 12px;
 }
 
 .app-name {
+  font-family: "Noto Serif", serif;
   margin-left: 5%;
   padding-top: 1.5%;
   font-size: 30px;
