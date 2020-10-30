@@ -1,0 +1,24 @@
+.option {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.title {
+  color: #42593e;
+  margin: 5px;
+}
+
+.p-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 275px;
+  max-height: 103px;
+}
+
+.p {
+  color: #3d3c3c;
+  font-size: 18.72px;
+}
