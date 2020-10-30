@@ -2,7 +2,7 @@
   background-color: #42593e;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   height: 30vh;
 }
 
@@ -15,27 +15,30 @@
 .footer-logo {
   color: #ffffff;
   font-size: 30px;
+  font-family: 'Noto Serif'
 }
 
 .contact-links {
   color: #ffffff;
   font-size: 12px;
+  font-family: 'Oxygen';
 }
 
 .left-container {
-  margin-left: 200px;
+  margin-left: 100px;
   text-align: left;
 }
 
 .aboutUs-div {
   color: #ffffff;
   font-size: 16px;
-  margin-right: 200px;
+  margin-right: 100px;
   text-align: left;
+  font-family: 'Oxygen';
 }
 
 .language {
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 10px;
   text-align: center;
   border: 1px solid white;
@@ -46,6 +49,18 @@
 
 .down-arrow {
   float: right;
-  font-size: 20px;
-  font-weight: 800;
+}
+
+.pinterest {
+  margin-left: -20px;
+}
+
+.instagram {
+margin-right: 20px;
+}
+.twitter {
+margin-right: 20px;
+}
+.facebook {
+margin-right: 20px;
 }
