@@ -1,3 +1,16 @@
+.buying {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.buying > h2 {
+  color: #42593e;
+  text-align: left;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 900;
+  padding-left: 5%;
+}
+
 .items {
   display: flex;
   flex-direction: row;
@@ -5,15 +18,18 @@
   align-items: center;
 }
 .image {
-  max-width: 200px;
+  /* max-width: 200px; */
+  height: 275px;
+  width: 275px;
 }
-.buying {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.buying > h2 {
-  color: #42593e;
-  text-align: left;
-  font-family: "Oxygen", sans-serif;
-}
+
+.seemore-button {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #42593E;
+  border: 0;
+  width: 200px;
+  height: 40px;
+  -webkit-appearance: none;
+  margin: 30px auto;
+  }
