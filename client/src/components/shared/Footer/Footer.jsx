@@ -13,11 +13,11 @@ function Footer(props) {
       <div className="footer-flex-container">
         <div className="left-container">
           <h1 className="footer-logo">GreenHouse</h1>
-          <img className='pinterest' src={pinterest} />
-          <img className='instagram' src={instagram} />
-          <img className='twitter' src={twitter} />
-          <img className='facebook' src={facebook} />
-          <img className='linkedin' src={linkedin} />
+          <img className='pinterest' src={pinterest} alt='pinterest-logo'/>
+          <img className='instagram' src={instagram} alt='pinterest-logo'/>
+          <img className='twitter' src={twitter} alt='twitter-logo'/>
+          <img className='facebook' src={facebook} alt='facebook-logo'/>
+          <img className='linkedin' src={linkedin} alt='linkedin-logo'/>
           
           <p className="contact-links">
             Accessibility Help | Privacy Statement | Cookies Settings
@@ -29,7 +29,7 @@ function Footer(props) {
           <p className="expert">Become an Expert</p>
           <p className="support">Support</p>
           <p className="language">
-            Language <img className="down-arrow" src={image} />
+            Language <img className="down-arrow" src={image} alt="down arrow" />
           </p>
         </div>
       </div>
