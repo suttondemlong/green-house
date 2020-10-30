@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nav.css';
-import login from '../../../../src/assets/login2.png';
+import login from '../../../../src/assets/login3.png';
 import glass from '../../../../src/assets/loupe.png'
 
 function Nav(props) {
@@ -11,9 +11,10 @@ function Nav(props) {
       <p className="links">Dashboard</p>
       <p className="links">Meet our Experts</p>
         <div className="search">
-          <input className="nav-search-bar" type="text" placeholder="Search" />
+        <input className="nav-search-bar" type="text" placeholder="Search" />
+        
         </div>
-      <img className ="login-icon" src={login} />
+        <img className ="login-icon" src={login} />
     </div>
   );
 }
