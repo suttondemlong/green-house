@@ -1,5 +1,7 @@
 import React from 'react';
-import '../Nav.css'
+import './Nav.css';
+import login from '../../../../src/assets/login2.png';
+import glass from '../../../../src/assets/loupe.png'
 
 function Nav(props) {
   return (
@@ -8,7 +10,10 @@ function Nav(props) {
       <p className="links">Explore Green Tech</p>
       <p className="links">Dashboard</p>
       <p className="links">Meet our Experts</p>
-      <input className="nav-search-bar" type="text" placeholder="Search"></input>
+        <div className="search">
+          <input className="nav-search-bar" type="text" placeholder="Search" />
+        </div>
+      <img className ="login-icon" src={login} />
     </div>
   );
 }
@@ -16,3 +21,8 @@ function Nav(props) {
 export default Nav;
 
 //login logo?
+
+{/* <p className="language">
+Language <img className="down-arrow" src={image} /> */}
+
+{/* <input className="nav-search-bar" type="text" src={glass} placeholder="Search"></input> */}
