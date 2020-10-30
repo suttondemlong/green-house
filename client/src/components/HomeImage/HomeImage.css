@@ -1,4 +1,24 @@
-.text-in-image {
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Oxygen:wght@700&display=swap");
+
+.hero-container {
   background-image: url("../../assets/home-image.jpg");
+  background-size: cover;
+  text-align: left;
+  padding-left: 13%;
+  padding-top: 25%;
+  padding-bottom: 20%;
+}
+
+.image-text {
   color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 20%;
+}
+
+.join-button {
+  width: 300px;
+  color: white;
+  border: 2px solid white;
 }
