@@ -6,19 +6,21 @@ function HomeImage(props) {
     <div>
       <div>
         <div className="hero-container">
-          <p className="image-text">Join an eco-friendly community.</p>
-          <p className="image-text">Reach your goals of sustainability.</p>
-          <p className="image-text">GreenHouse will give you the</p> 
-          <p className="image-text">tools and</p>
-          <p className="image-text">information you need.</p>
-          <p className="join-button" disabled>Join our Community</p>
+          <div className="image-text">Join an eco-friendly community.</div>
+          <div className="image-text">Reach your goals of sustainability.</div>
+          <div className="image-text">GreenHouse will give you the tools and information you need.</div>
+          <div className="join-button" disabled>Join our Community</div>
         </div>
-        <div className="title-gren-hous">
-          <span className="greenhouse-bold">GreenHouse</span> /ˈɡrēnˌhous/
+        <div className="def-container">
+          <div className="title-gren-hous">
+            <div className="greenhouse-bold">GreenHouse</div>
+            <div>/ˈɡrēnˌhous/</div> 
+          </div>
+            <div className="definition">
+            De-mystifying green tech in the home for the eco-curious 
+            </div>
         </div>
-        <div className="definition">
-          De-mystifying green tech in the home for the eco-curious 
-        </div>
+        
       </div>
     </div>
   );
