@@ -1,0 +1,35 @@
+.chat-container {
+font-size: 16px;
+text-align: center;
+margin-top: 60px;
+margin-bottom: 60px;
+}
+
+.chat-hr {
+  border: 2px solid black;
+  width: 80%;
+}
+
+.all-caps {
+font-size: 24px;
+color: #42593E
+}
+
+.paragraph-chitChat {
+  margin-bottom: 0px;
+}
+
+.paragraph-conversation {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.chat-button {
+font-size: 16px;
+color: #ffffff;
+background-color: #42593E;
+border: 0;
+width: 200px;
+height: 40px;
+-webkit-appearance: none;
+}
