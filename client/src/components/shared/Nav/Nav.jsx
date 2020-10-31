@@ -1,8 +1,7 @@
 import React from 'react';
 import './Nav.css';
-// import { NavLink } from 'react-router-dom'
 import login from '../../../../src/assets/login3.png';
-// import glass from '../../../../src/assets/loupe.png'
+
 
 function Nav(props) {
   return (
@@ -15,16 +14,10 @@ function Nav(props) {
         <input className="nav-search-bar" type="text" placeholder="Search" />
         
         </div>
-        <img className ="login-icon" src={login} />
+        <img className ="login-icon" src={login} alt="login-icon" />
     </div>
   );
 }
 
 export default Nav;
 
-//login logo?
-
-{/* <p className="language">
-Language <img className="down-arrow" src={image} /> */}
-
-{/* <input className="nav-search-bar" type="text" src={glass} placeholder="Search"></input> */}
