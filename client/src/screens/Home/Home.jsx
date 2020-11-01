@@ -6,6 +6,7 @@ import Directions from '../../components/Directions/Directions';
 import HomeImage from "../../components/HomeImage/HomeImage"
 import Layout from '../../components/shared/Layout/Layout'
 import './Home.css';
+import ArticleCards from '../../components/ArticleCards/ArticleCards';
 
 function Home(props) {
   return (
@@ -15,7 +16,7 @@ function Home(props) {
           <HomeImage />
           <Directions />
           <ChatHomePage />
-          <Articles />
+          <ArticleCards />
           <Buying />
         </div>
       </div>
