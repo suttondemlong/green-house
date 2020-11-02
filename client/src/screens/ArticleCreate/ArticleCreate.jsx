@@ -28,22 +28,30 @@ function ArticleCreate(props) {
   }; 
     if (isCreated) {
     return <Redirect to={"/articles"} />
-  }
+    }
+  
+  // const createAlert = () => {
+  //   alert('Thank you for submitting to the GreenHouse community!')
+  //   if (window.comfirm) {
+  //     window.location = '/articles'
+  //   }
+    
+  // }
   return (
     <Layout>
       <form className="create-form" onSubmit={handleSumbit}>
-        <label htmlFor='title'/>
         <input
-          className="input-title"
+          className="create-title"
           placeholder="Title"
           value={article.title}
           name="title"
           required
           autoFocus
           onChange={handleChange}
+          maxLength="40"
         />
         <input
-          className="input-image"
+          className="create-image"
           placeholder="Image URL"
           value={article.imgURL}
           name="imgURL"
@@ -51,7 +59,7 @@ function ArticleCreate(props) {
           onChange={handleChange}
         />
         <textarea
-          className="textarea-description"
+          className="create-textarea"
           rows={10}
           placeholder="Content"
           value={article.content}
@@ -60,14 +68,14 @@ function ArticleCreate(props) {
           onChange={handleChange}
         />
         <input
-          className="input-author"
+          className="create-author"
           placeholder="Author"
           value={article.author}
           name="author"
           required
           onChange={handleChange}
         />
-        <button type="submit" className="submit-button">
+        <button type="submit" className="create-submit-button" onClick='createAlert()'>
           Submit
         </button>
       </form>
