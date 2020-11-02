@@ -33,3 +33,7 @@ width: 200px;
 height: 40px;
 -webkit-appearance: none;
 }
+
+.chat-button:hover {
+  color: #FF5C00;
+}
