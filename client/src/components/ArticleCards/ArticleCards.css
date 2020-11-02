@@ -38,3 +38,9 @@
 .seemore-button:hover {
   color: #FF5C00;
 }
+
+@media screen and (max-width: 400px) {
+  .reading > h2 {
+    text-align: center;
+  }
+}

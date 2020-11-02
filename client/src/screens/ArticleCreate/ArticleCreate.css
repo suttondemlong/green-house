@@ -80,7 +80,23 @@ select:focus {
   color: #ffffff;
   background-color: #42593e;
   border: 0;
-  width: 100%;
+  margin: 0 auto;
+  width: 50%;
   height: 40px;
   -webkit-appearance: none;
+}
+
+@media screen and (width: 375px) {
+  .create-form {
+    width: 100%;
+    padding-top: 0;
+  }
+  .create-title,
+  .create-author,
+  .create-image,
+  .create-textarea {
+    border-left: none;
+    border-right: none;
+    margin-top: 5px;
+  }
 }

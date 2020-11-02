@@ -11,9 +11,3 @@
   color: #3d3c3c;
 }
 
-@media (max-width: 500px) {
-  .articles {
-    width: 100%;
-    justify-content: space-around;
-  }
-}
