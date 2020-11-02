@@ -8,6 +8,8 @@
   padding: 20px;
   margin-bottom: 60px;
   max-width: 325px;
+  min-width: 325px;
+  min-height: 385px;
   text-decoration: none;
   color: #3d3c3c;
 }
@@ -36,15 +38,20 @@
 }
 
 .article-name {
+  font-family: 'Oxygen', sans-serif;
   font-size: 18px;
+  font-weight: 900;
   padding: 10px;
   word-wrap: break-word;
-  text-align: center;
+  text-align: left;
 }
 
-.price {
+.article-author {
+  font-family: 'Oxygen', sans-serif;
   font-size: 18px;
-  padding: 10px;
+  font-weight: 900;
+  margin-right: 62%;
+  color: #42593e;
 }
 
 @media (max-width: 500px) {
