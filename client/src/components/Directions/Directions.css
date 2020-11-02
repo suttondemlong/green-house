@@ -10,7 +10,7 @@
   height: 150px;
 }
 
-@media screen and (width: 375px) {
+@media screen and (max-width: 500px) {
   .vertical-line {
     height: 75px;
   }
