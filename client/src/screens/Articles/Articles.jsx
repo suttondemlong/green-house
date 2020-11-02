@@ -16,13 +16,13 @@ function Articles(props) {
     }
    fetchArticles()
   }, [])
-  const articlesJSX = articles.map((post, index) => (
+  const articlesJSX = articles.map((article, index) => (
     <Article
-      _id={post._id}
-      title={post.title}
-      imgURL={post.imgURL}
-      content={post.content}
-      author={post.author}
+      _id={article._id}
+      title={article.title}
+      imgURL={article.imgURL}
+      content={article.content}
+      author={article.author}
       key={index}
     />
   ));
