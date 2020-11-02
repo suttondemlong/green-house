@@ -1,5 +1,6 @@
 .article-detail {
   display: flex;
+  flex-direction: column;
   padding: 100px;
   padding-top: 80px;
 }
@@ -22,8 +23,8 @@
 }
 
 .article-detail-image {
-  width: 25vw;
-  height: 25vw;
+  width: 100%;
+  height: auto;
   padding: 0 0.5vw;
 }
 .edit-button,

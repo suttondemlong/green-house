@@ -1,0 +1,39 @@
+.article-edit {
+  display: flex;
+  padding: 100px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+.edit-article-image {
+  width: auto;
+  height: 60vh;
+  padding: 0 0.5vw;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-label {
+  font-family: "Oxygen", sans-serif;
+  margin: 0 5px;
+}
+
+.edit-input {
+  width: 30%;
+}
+
+.article-save-button {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #42593e;
+  border: 0;
+  width: 200px;
+  height: 40px;
+  -webkit-appearance: none;
+  margin: 30px auto;
+}

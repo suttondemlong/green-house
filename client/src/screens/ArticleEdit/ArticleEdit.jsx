@@ -47,26 +47,32 @@ const ArticleEdit = (props) => {
       <div className="article-edit">
         <div className="image-container">
           <img className="edit-article-image" src={article.imgURL} />
-          <form onSubmit={handleSubmit}>
-            <input
-              classname="input-name"
-              placeholder='Title'
-              value={article.title}
-              name='title'
-              required
-              autoFocus
-              onChange={handleChange}
-            />
-            <input
-              className="input-author"
-              placeholder='Author'
-              value={article.author}
-              name='author'
-              required
-              onChange={handleChange}
-            />
+          <form className='edit-form' onSubmit={handleSubmit}>
+            <label className="edit-label">
+              Title:
+              <input
+                className="edit-input"
+                placeholder='Title'
+                value={article.title}
+                name='title'
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+            </label>
+            <label className="edit-label">
+              Author:
+              <input
+                className="edit-input"
+                placeholder='Author'
+                value={article.author}
+                name='author'
+                required
+                onChange={handleChange}
+              />
+            </label>
             <textarea
-              className="textarea-description"
+              className="edit-textarea-description"
               rows={10}
               cols={70}
               placeholder='Content'
@@ -75,7 +81,7 @@ const ArticleEdit = (props) => {
               required
               onChange={handleChange}
             />
-            <button type='submit' className="save-button">Save</button>
+            <button type='submit' className="article-save-button">Save</button>
           </form>
         </div>
       </div>
