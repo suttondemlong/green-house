@@ -15,11 +15,14 @@
   font-size: 3vw;
   letter-spacing: 0.25vw;
   padding: 0.5vw;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
 }
 
 .detail-content {
   padding: 0.5vw;
   letter-spacing: 0.1vw;
+  font-family: "Barlow";
 }
 
 .article-detail-image {
@@ -39,29 +42,17 @@
   margin: 30px auto;
 }
 
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #ff5c00;
+}
+
 .edit-link,
 .delete-link {
   color: white;
   text-decoration: none;
   padding: 2vw;
 }
-
-/* 
-.edit-button,
-.delete-button {
-  font-size: 2vw;
-  font-family: "Oxygen";
-  text-align: center;
-  height: 2.5vw;
-  min-width: 5vw;
-  width: 20%;
-  align-self: center;
-  background-color: #42593e;
-  color: white;
-  border: none;
-  margin: 1vw;
-  display: block;
-} */
 
 @media only screen and (max-width: 800px) {
   .article-detail {
