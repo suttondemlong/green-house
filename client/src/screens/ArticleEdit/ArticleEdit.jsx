@@ -49,7 +49,7 @@ const ArticleEdit = (props) => {
           <img className="edit-article-image" src={article.imgURL} />
           <form className='edit-form' onSubmit={handleSubmit}>
             <label className="edit-label">
-              Title:
+              <div>Title:</div>
               <input
                 className="edit-input"
                 placeholder='Title'
@@ -61,7 +61,7 @@ const ArticleEdit = (props) => {
               />
             </label>
             <label className="edit-label">
-              Author:
+              <div>Author:</div>
               <input
                 className="edit-input"
                 placeholder='Author'
@@ -69,18 +69,29 @@ const ArticleEdit = (props) => {
                 name='author'
                 required
                 onChange={handleChange}
-              />
+                />
             </label>
-            <textarea
-              className="edit-textarea-description"
-              rows={10}
-              cols={70}
-              placeholder='Content'
-              value={article.content}
-              name='content'
-              required
-              onChange={handleChange}
-            />
+            <label className="edit-label">
+              <div>Image URL:</div> 
+              <input
+                className="edit-input"
+                placeholder='URL'
+                value={article.imgURL}
+                name='imgURL'
+                required
+                onChange={handleChange}
+                />
+            </label>
+              <textarea
+                className="edit-textarea-description"
+                rows={10}
+                cols={70}
+                placeholder='Content'
+                value={article.content}
+                name='content'
+                required
+                onChange={handleChange}
+              />
             <button type='submit' className="article-save-button">Save</button>
           </form>
         </div>
