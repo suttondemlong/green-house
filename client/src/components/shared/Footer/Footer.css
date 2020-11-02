@@ -1,7 +1,5 @@
 .footer-container {
   background-color: #42593e;
-  /* position: fixed; */
-  /* bottom: 0; */
   width: 100vw;
   height: 40vh;
 }
@@ -27,15 +25,15 @@
 }
 
 .left-container {
-  margin-left: 100px;
-  margin-top: 40px;
+  margin-left: 10%;
+  margin-top: 1%;
   text-align: left;
 }
 
 .aboutUs-div {
   color: #ffffff;
   font-size: 16px;
-  margin-right: 100px;
+  margin-right: 10%;
   margin-top: 20px;
   text-align: left;
   font-family: "Oxygen";
@@ -47,7 +45,7 @@
   padding: 10px;
   text-align: center;
   border: 1px solid white;
-  width: 200px;
+  width: 100%;
   color: #ffffff;
   font-size: 16px;
 }
@@ -68,4 +66,55 @@
 }
 .facebook {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 750px) {
+.pinterest {
+  width: 45px;
+  height: 30px;
+  margin-left: -10px;
+}
+.instagram {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.twitter {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.facebook {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.linkedin {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.aboutUs-div {
+  font-size: 12px;
+}
+
+.footer-logo {
+  font-size: 26px;
+}
+
+.contact-links {
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+.left-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.language {
+  font-size: 14px;
+}
+
 }
