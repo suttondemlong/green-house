@@ -88,15 +88,8 @@ select:focus {
 
 @media screen and (width: 375px) {
   .create-form {
-    width: 100%;
+    width: 95%;
     padding-top: 0;
-  }
-  .create-title,
-  .create-author,
-  .create-image,
-  .create-textarea {
-    border-left: none;
-    border-right: none;
-    margin-top: 5px;
+    margin: 5px auto;
   }
 }
