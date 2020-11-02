@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom"
 import "./Articles.css";
 import { getArticles } from "../../services/articles";
+import Layout from '../../components/shared/Layout/Layout';
+import Article from "../../components/Article/Article"
 
 
 function Articles(props) {
-  // const [items, setItems] = useState([])
   const [articles, setArticles] = useState([])
 
-//async await move line 14 above 12
   useEffect(() => {
     const fetchArticles = async () => {
       const articles = await getArticles()
@@ -15,19 +16,24 @@ function Articles(props) {
     }
    fetchArticles()
   }, [])
+  const articlesJSX = articles.map((post, index) => (
+    <Article
+      _id={post._id}
+      title={post.title}
+      imgURL={post.imgURL}
+      content={post.content}
+      author={post.author}
+      key={index}
+    />
+  ));
  
-  console.log(articles)
-  console.log(articles[0])
-
-
   return (
-    <div className="article-carousel">
-      <h2>What People Are Reading</h2>
-      <div className="articles">
-        {articles.map((articles) => (
-          <img className="article-img" src={articles.imgURL} alt="Article" />))}
-      </div>
-    </div>
+    <Layout>
+      <Link to="/add-article" className="add-article">
+        <h2>Add Article</h2>
+        </Link>
+      <div className="articles">{articlesJSX}</div>
+    </Layout>
   );
 }
 

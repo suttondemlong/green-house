@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from "react-router-dom"
 import "./ArticleCards.css";
 import ArticleCard from "../ArticleCard/ArticleCard";
 import { getArticles } from "../../services/articles";
@@ -34,10 +35,12 @@ const  ArticleCards =(props) => {
     <h2>What people are reading</h2>
       <div className="article-cards">
         <div className="cards">{CARDS}</div>
-      </div>
-      <button className="seemore-button" disabled>
-          See More
+        </div>
+        <Link to="/articles">
+      <button className="seemore-button">
+            See More
         </button>
+        </Link>
       </div>
       <hr className="article-hr"></hr>
       </>
