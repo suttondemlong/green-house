@@ -78,7 +78,8 @@
 
   .article-detail-image {
     justify-content: center;
-    width: 80vw;
+    width: 70vw;
+    margin-left: -13vw;
   }
 
   .edit-button,
@@ -97,13 +98,15 @@
 
   .detail-title {
     text-align: center;
-    width: 75vw;
+    width: 70vw;
+    margin-left: -13vw;
   }
 
   .detail-content {
-    width: 50vw;
     text-align: center;
+    width: 50vw;
     width: 70vw;
+    margin-left: -13vw;
   }
 
   .detail-author {
