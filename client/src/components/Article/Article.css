@@ -38,19 +38,18 @@
 }
 
 .article-name {
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 18px;
   font-weight: 900;
   padding: 10px;
-  word-wrap: break-word;
-  text-align: left;
+  text-align: center;
 }
 
 .article-author {
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 18px;
   font-weight: 900;
-  margin-right: 62%;
+  text-align: center;
   color: #42593e;
 }
 
