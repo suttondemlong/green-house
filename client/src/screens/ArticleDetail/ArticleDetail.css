@@ -10,13 +10,13 @@
   line-height: 1.6;
 }
 
-.title {
+.detail-title {
   font-size: 64px;
   letter-spacing: 1px;
   padding: 5px;
 }
 
-.content {
+.detail-content {
   padding: 10px;
   letter-spacing: 1px;
 }

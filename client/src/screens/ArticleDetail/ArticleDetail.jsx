@@ -24,10 +24,10 @@ const ArticleDetail = (props) => {
     return <h1>Loading...</h1>
   }
   if (isDeleted) {
-  return <Redirect to={"/Home"} />
+  return <Redirect to={"/articles"} />
   }
   const handleDelete = async () => {
-    await deleteArticle(article.id)
+    await deleteArticle(article._id)
     setIsDeleted(!isDeleted)
   }
 
@@ -36,11 +36,11 @@ const ArticleDetail = (props) => {
       <div className="article-detail">
         <img className="article-detail-image" src={article.imgURL} alt={article.title} />
         <div className="detail">
-          <div className="title">{article.title}</div>
-          <div className="content">{article.content}</div>
-          <div className="author">By: {article.author}</div>
-          <div className="container">
-            <Link className="edit-link" to={`/articles/${article.id}/edit`}>
+          <div className="detail-title">{article.title}</div>
+          <div className="detail-content">{article.content}</div>
+          <div className="detail-author">By: {article.author}</div>
+          <div className="detail-container">
+            <Link className="edit-link" to={`/articles/${article._id}/edit`}>
               <button className="edit-button">Edit</button>
             </Link>
             <button className="delete-button" onClick={handleDelete}>Delete</button>
