@@ -14,11 +14,14 @@
   font-size: 3vw;
   letter-spacing: 0.25vw;
   padding: 0.5vw;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
 }
 
 .detail-content {
   padding: 0.5vw;
   letter-spacing: 0.1vw;
+  font-family: "Barlow";
 }
 
 .article-detail-image {
@@ -36,6 +39,7 @@
   height: 40px;
   -webkit-appearance: none;
   margin: 30px auto;
+  font-family: "Oxygen", sans-serif;
 }
 
 .edit-link,
