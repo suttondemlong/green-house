@@ -22,3 +22,12 @@
   color: #3d3c3c;
   font-size: 18.72px;
 }
+
+@media screen and (width: 375px) {
+  .options-title {
+    font-size: 6px;
+  }
+  .p {
+    font-size: 6px;
+  }
+}
