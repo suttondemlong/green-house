@@ -30,6 +30,7 @@
   height: auto;
   padding: 0 0.5vw;
 }
+
 .edit-button,
 .delete-button {
   font-size: 16px;
@@ -70,17 +71,26 @@
 }
 
 /* mobile? */
-@media only screen and (max-width: 400px) {
-  .article-detail {
-    display: flex;
-    flex-direction: column;
+@media only screen and (min-width: 350px) {
+  .article-detail-image {
+    justify-content: center;
+    margin: auto;
   }
 
-  .article-detail-image {
-    margin: auto;
-    margin-bottom: 1vw;
-    width: 80%;
-    height: 80%;
-    padding: 1vw;
+  .article-detail {
+    font-size: smaller;
+  }
+
+  .edit-button,
+  .delete-button {
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #42593e;
+    border: 0;
+    width: 100px;
+    height: 20px;
+    -webkit-appearance: none;
+    margin: 30px auto;
+    margin-top: 10vh;
   }
 }
