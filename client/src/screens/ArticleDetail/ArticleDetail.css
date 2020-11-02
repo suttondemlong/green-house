@@ -11,25 +11,25 @@
 }
 
 .detail-title {
-  font-size: 64px;
-  letter-spacing: 1px;
-  padding: 5px;
+  font-size: 3vw;
+  letter-spacing: 0.25vw;
+  padding: 0.5vw;
 }
 
 .detail-content {
-  padding: 10px;
-  letter-spacing: 1px;
+  padding: 0.5vw;
+  letter-spacing: 0.15vw;
 }
 
 .article-detail-image {
-  width: 400px;
-  height: 400px;
-  padding: 0 40px;
+  width: 25vw;
+  height: 25vw;
+  padding: 0 0.5vw;
 }
 
 .edit-button,
 .delete-button {
-  font-size: 22px;
+  font-size: 2vw;
   font-family: "Oxygen";
   text-align: center;
   height: 40px;
@@ -42,6 +42,7 @@
   border: none;
   margin: 5px;
   display: block;
+  text-decoration: none;
 }
 
 .edit-link,
