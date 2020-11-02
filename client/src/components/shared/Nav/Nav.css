@@ -53,3 +53,26 @@
   color: white;
   font-size: 10px;
 }
+
+@media only screen and (max-width: 375px) {
+  .app-name {
+    font-size: smaller;
+  }
+
+  .links {
+    font-size: 5px;
+  }
+
+  .nav-search-bar {
+    width: 15vw;
+    height: 1vw;
+    margin-right: 150px;
+  }
+
+  .login-icon {
+    height: 30px;
+    width: 30px;
+    margin-left: -150px;
+    margin-right: 5%;
+  }
+}
