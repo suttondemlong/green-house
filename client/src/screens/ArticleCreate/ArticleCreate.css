@@ -1,0 +1,44 @@
+.create-form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 25px auto;
+  height: 100%;
+  width: 50%;
+}
+.input-title:focus,
+.input-author:focus,
+.input-image:focus,
+select:focus {
+  outline: none;
+}
+
+.input-title {
+  font-size: 48px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 100px;
+}
+
+.input-image {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-author {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 75px;
+}
+
+.submit-button {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: pointer;
+}

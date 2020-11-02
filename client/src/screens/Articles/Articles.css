@@ -1,13 +1,19 @@
 .articles {
+  width: 90vw;
   display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px;
 }
 
-.article-img {
-  height: 250px;
-  width: 250px;
-  margin: 25px;
+.add-article {
+  text-decoration: none;
+  color: #3d3c3c;
+}
+
+@media (max-width: 500px) {
+  .articles {
+    width: 100%;
+    justify-content: space-around;
+  }
 }

@@ -27,8 +27,8 @@ const getArticle = async (req, res) => {
 
 const createArticle = async (req, res) => {
     try {
-        const article = await new article(req.body)
-        await Article.save()
+        const article = await new Article(req.body)
+        await article.save()
         res.status(201).json(article)
     } catch (error) {
         console.log(error)
