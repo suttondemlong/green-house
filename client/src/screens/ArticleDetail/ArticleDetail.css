@@ -72,13 +72,14 @@
 
 /* mobile? */
 @media only screen and (min-width: 350px) {
-  .article-detail-image {
-    justify-content: center;
-    margin: auto;
+  .article-detail {
+    /* width: 100%; */
+    font-size: smaller;
   }
 
-  .article-detail {
-    font-size: smaller;
+  .article-detail-image {
+    justify-content: center;
+    /* width: 80%; */
   }
 
   .edit-button,
@@ -92,5 +93,14 @@
     -webkit-appearance: none;
     margin: 30px auto;
     margin-top: 10vh;
+  }
+
+  .detail-title {
+    text-align: center;
+  }
+
+  .detail-content {
+    width: 50vw;
+    text-align: center;
   }
 }
