@@ -11,9 +11,7 @@ function Nav(props) {
       <p className="app-name">GreenHouse</p>
       </Link>
       <p className="links">Explore Green Tech</p>
-      <Link to='/dashboard' style={{textDecoration: 'none', color: '#ffffff'}}>
-        <p className="links">Dashboard</p>
-      </Link>
+      <p className="links">Dashboard</p>
       <p className="links">Meet our Experts</p>
         <div className="search">
         <input className="nav-search-bar" type="text" placeholder="Search" />
