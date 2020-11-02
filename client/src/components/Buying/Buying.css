@@ -18,8 +18,8 @@
   align-items: center;
 }
 .image {
-  height: 275px;
-  width: 275px;
+  height: 25%;
+  width: 25%;
 }
 
 .seemore-button {
@@ -32,3 +32,13 @@
   -webkit-appearance: none;
   margin: 30px auto;
   }
+
+.seemore-button:hover {
+  color: #FF5C00;
+}
+
+@media screen and (max-width: 400px) {
+  .buying > h2 {
+    text-align: center;
+  }
+}

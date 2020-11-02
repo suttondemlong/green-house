@@ -1,16 +1,15 @@
 .article-edit {
   display: flex;
-  padding: 100px;
-  padding-top: 80px;
+  padding: 10%;
+  padding-top: 7%;
   display: flex;
-  flex-direction: column;
   line-height: 1.6;
 }
 
 .edit-article-image {
-  width: auto;
-  height: 60vh;
-  padding: 0 0.5vw;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .edit-form {
@@ -20,11 +19,16 @@
 
 .edit-label {
   font-family: "Oxygen", sans-serif;
-  margin: 0 5px;
+  margin: 5px;
+  font-size: 15px;
 }
 
 .edit-input {
-  width: 30%;
+  width: 70%;
+  font-family: "Oxygen", sans-serif;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .article-save-button {
@@ -36,4 +40,31 @@
   height: 40px;
   -webkit-appearance: none;
   margin: 30px auto;
+}
+
+.edit-textarea-description {
+  margin: 10px auto;
+  width: 66%;
+  height: auto;
+  font-family: "Oxygen", sans-serif;
+  padding: 2%;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.9px;
+}
+
+@media only screen and (max-width: 500px) {
+  .edit-input {
+    width: 100%;
+  }
+  .edit-textarea-description {
+    margin: 10px auto;
+    width: 96%;
+    height: auto;
+    font-family: "Oxygen", sans-serif;
+    padding: 2%;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.9px;
+  }
 }
