@@ -70,7 +70,6 @@
   }
 }
 
-/* mobile? */
 @media only screen and (max-width: 375px) {
   .article-detail {
     font-size: smaller;
@@ -93,6 +92,7 @@
     -webkit-appearance: none;
     margin: 10vw auto;
     margin-top: 10vh;
+    justify-content: center;
   }
 
   .detail-title {
@@ -104,5 +104,10 @@
     width: 50vw;
     text-align: center;
     width: 70vw;
+  }
+
+  .detail-author {
+    display: flex;
+    justify-content: center;
   }
 }
