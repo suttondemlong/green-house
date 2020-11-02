@@ -6,6 +6,7 @@ import Articles from "./screens/Articles/Articles"
 import ArticleCreate from "./screens/ArticleCreate/ArticleCreate";
 import ArticleDetail from "./screens/ArticleDetail/ArticleDetail";
 import ArticleEdit from "./screens/ArticleEdit/ArticleEdit"
+import Dashboard from "./screens/Dashboard/Dashboard"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/add-article" component={ArticleCreate} />
         <Route exact path="/articles/:id/edit" component={ArticleEdit} />
         <Route exact path="/articles/:id" component={ArticleDetail} />
+        <Route exact path="/dashboard" component={Dashboard} />
       </Switch>
     </div>
   );
