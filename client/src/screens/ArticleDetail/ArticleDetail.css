@@ -70,7 +70,9 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+/* mobile? */
+@media only screen and (max-width: 500px) {
+
   .article-detail {
     font-size: smaller;
     text-align: center;
