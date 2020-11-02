@@ -46,7 +46,7 @@ const ArticleEdit = (props) => {
     <Layout>
       <div className="article-edit">
         <div className="image-container">
-          <img className="edit-article-image" src={article.imgURL} />
+          <img className="edit-article-image" src={article.imgURL} alt={article.title} />
           <form className='edit-form' onSubmit={handleSubmit}>
             <label className="edit-label">
               <div>Title:</div>
