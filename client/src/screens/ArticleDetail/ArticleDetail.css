@@ -74,31 +74,35 @@
 @media only screen and (max-width: 375px) {
   .article-detail {
     font-size: smaller;
+    text-align: center;
   }
 
   .article-detail-image {
     justify-content: center;
+    width: 80vw;
   }
 
   .edit-button,
   .delete-button {
-    font-size: 12px;
+    font-size: 2vw;
     color: #ffffff;
     background-color: #42593e;
     border: 0;
-    width: 100px;
-    height: 20px;
+    width: 20vw;
+    height: 5vw;
     -webkit-appearance: none;
-    margin: 30px auto;
+    margin: 10vw auto;
     margin-top: 10vh;
   }
 
   .detail-title {
     text-align: center;
+    width: 75vw;
   }
 
   .detail-content {
     width: 50vw;
     text-align: center;
+    width: 70vw;
   }
 }
