@@ -1,0 +1,62 @@
+.my-equip-rooms {
+  display: flex;
+  flex-direction: column 1fr;
+  padding: 100px;
+  padding-top: 80px;
+  justify-content: center;
+}
+
+.room-title {
+  color: #42593e;
+  font-size: 2vw;
+  letter-spacing: 0.25vw;
+  padding: 0.5vw;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1vw;
+  font-style: bold;
+}
+
+.room-stats {
+  font-size: 1vw;
+  padding: 0.5vw;
+  letter-spacing: 0.1vw;
+  font-family: "Barlow";
+  font-style: italic;
+  text-align: left;
+}
+
+.room-items {
+  font-size: 1vw;
+  padding: 0.5vw;
+  letter-spacing: 0.1vw;
+  font-family: "Barlow";
+  text-align: left;
+  text-decoration: underline;
+}
+
+.equip-rooms-img {
+  width: 30%;
+  height: auto;
+  padding: 0 0.5vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .equip-rooms-img {
+    width: 50vw;
+  }
+  .room-items {
+    width: 20vw;
+    height: 15vw;
+    font-size: smaller;
+  }
+  .room-stats {
+    width: 20vw;
+    font-size: smaller;
+  }
+  .room-title {
+    width: 20vw;
+    text-align: left;
+    font-size: smaller;
+  }
+}
