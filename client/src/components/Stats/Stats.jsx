@@ -5,14 +5,11 @@ import Badges from '../Badges/Badges'
 
 function Stats(props) {
   return (
-  <>
-    <hr className="chat-hr"></hr>
     <div className='stats-container'>
       <Savings />
       <div className='vertical-line'></div>
       <Badges />
       </div>
-  </>
   );
 }
 

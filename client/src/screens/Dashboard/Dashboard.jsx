@@ -12,10 +12,15 @@ function Dashboard(props) {
     <Layout>
       <div className="content-container">
         <h2 className="dashboard-user">Welcome Back Sherie</h2>
-        <Stats/>
+        <hr className="general-hr"></hr>
+        <Stats />
+        <hr className="general-hr"></hr>
         <Equipment />
+        <hr className="general-hr"></hr>
         <Wishlist />
+        <hr className="general-hr"></hr>
         <Reviews />
+        <hr className="general-hr"></hr>
         <ArticleCards />
       </div>
     </Layout>

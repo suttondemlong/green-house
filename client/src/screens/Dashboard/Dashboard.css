@@ -2,3 +2,8 @@
   text-align: left;
   padding-left: 4%;
 }
+
+.general-hr {
+  border: 2px solid black;
+  width: 90%;
+}
