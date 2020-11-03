@@ -1,11 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Route } from "react-router-dom"
+import Layout from "../../components/shared/Layout/Layout"
+import "./MyEquipment.css"
+import Equipment from "../../components/Equipment/Equipment"
+import MyRooms from "../../components/MyRooms/MyRooms"
 
 function MyEquipment(props) {
   return (
-        <div>
-          <h1>Hello!</h1>
-        </div>
+    <div>
+      <Layout >
+        <Equipment />
+        <MyRooms />
+      </Layout>
+      </div>
   );
 }
 
