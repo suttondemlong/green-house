@@ -3,7 +3,7 @@ const db = require('../db/connection')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-const getEquipment = async (req, res) => {
+const getEquipments = async (req, res) => {
     try {
         const equipments = await Equipment.find()
         res.json(equipments)
