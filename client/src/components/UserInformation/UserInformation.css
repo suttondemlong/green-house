@@ -1,0 +1,99 @@
+
+.userinformation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-left-div {
+  margin-left: 20%;
+  margin-top: 1%;
+}
+
+.user-right-div {
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 20%;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Oxygen";
+  font-size: 26px;
+}
+
+.language {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid white;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+}
+.userinformation > h2 {
+  color: #42593e;
+  text-align: left;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 900;
+  padding-left: 5%;
+}
+.userinfo-image{
+width: 75%;
+height: 75%;
+}
+
+.user-friends {
+text-decoration: underline;
+color: #FF5C00;
+}
+
+.user-change {
+text-decoration: underline;
+color: #FF5C00;
+}
+.user-add-button {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #42593E;
+  border: 0;
+  width: 200px;
+  height: 40px;
+  -webkit-appearance: none;
+  margin: 10px;
+  }
+
+  .user-view-button {
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #42593E;
+    border: 0;
+    width: 200px;
+    height: 40px;
+    -webkit-appearance: none;
+    /* margin: 30px auto; */
+    }
+
+    @media screen and (max-width: 750px) {
+      .userinformation {
+        display: block;
+      }
+      .user-left-div {
+        /* margin-left: 20%;
+        margin-top: 1%; */
+        margin: 0 auto;
+      }
+      
+      .user-right-div {
+        color: #be8585;
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Oxygen";
+        font-size: 26px;
+      }
+
+      .userinfo-image{
+        width: 40%;
+        height: 40%;
+        }
+
+    }

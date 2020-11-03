@@ -1,0 +1,10 @@
+/* .badges-container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.badges-title {
+  text-align: left;
+  color: #42593e;
+  margin-left: 20px;
+}
