@@ -4,6 +4,7 @@ import "./MyEquipment.css"
 import Equipment from "../../components/Equipment/Equipment"
 import MyRooms from "../../components/MyRooms/MyRooms"
 import MyEquipmentRooms from "../../components/MyEquipmentRooms/MyEquipmentRooms"
+import RoomsEquipment from "../../components/RoomsEquipment/RoomsEquipment"
 
 function MyEquipment(props) {
   return (
@@ -12,6 +13,7 @@ function MyEquipment(props) {
         <Equipment />
         <MyRooms />
         <MyEquipmentRooms />
+        <RoomsEquipment />
       </Layout>
       </div>
   );
