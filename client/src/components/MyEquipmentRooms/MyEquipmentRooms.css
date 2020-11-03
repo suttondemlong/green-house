@@ -1,0 +1,32 @@
+.my-equip-rooms {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  padding-top: 80px;
+}
+
+.room-title {
+  font-size: 3vw;
+  letter-spacing: 0.25vw;
+  padding: 0.5vw;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+}
+
+.room-stats {
+  padding: 0.5vw;
+  letter-spacing: 0.1vw;
+  font-family: "Barlow";
+}
+
+.room-items {
+  padding: 0.5vw;
+  letter-spacing: 0.1vw;
+  font-family: "Barlow";
+}
+
+.equip-rooms-img {
+  width: 40%;
+  height: auto;
+  padding: 0 0.5vw;
+}
