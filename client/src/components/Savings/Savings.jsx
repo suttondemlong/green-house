@@ -34,7 +34,7 @@ function Savings(props) {
             View Details
         </button>
         </div>
-      <div className="water-saved">
+      <div className="water-saved-container">
         <h5>Total Water Saved</h5>
           <div className='savings-gallons'>
             <img className="savings-icon" src={water} alt='water-droplet-icon'/>

@@ -6,6 +6,7 @@
 }
 .savings-main-title {
   text-align: left;
+  color: #3d3c3c;
 }
 .savings-items-container {
   display: flex;
@@ -20,6 +21,9 @@
   display: flex;
   flex-direction: column;
 }
+.money-saved-container > h5 {
+  color: #42593e;
+}
 
 .gauge {
   height: 25px;
@@ -28,6 +32,9 @@
 .energy-saved-container {
   display: flex;
   flex-direction: column;
+}
+.energy-saved-container > h5 {
+  color: #42593e;
 }
 .savings-watts {
   display: flex;
@@ -39,9 +46,12 @@
   flex-direction: row;
   justify-content: space-around;
 }
-.water-saved {
+.water-saved-container {
   display: flex;
   flex-direction: column;
+}
+.water-saved-container > h5 {
+  color: #42593e;
 }
 .savings-gallons {
   display: flex;
