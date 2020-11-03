@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {Link} from "react-router-dom"
+import React, { useState, useEffect} from "react";
+import {Link, withRouter} from "react-router-dom"
 import "./ArticleCards.css";
 import ArticleCard from "../ArticleCard/ArticleCard";
 import { getArticles } from "../../services/articles";
@@ -32,20 +32,19 @@ const  ArticleCards =(props) => {
   return (
     <>
     <div className='reading'>
-    <h2>What people are reading</h2>
+    <h2>{(props.match.path === '/dashboard') ? "Saved Articles" : "What people are reading" }</h2>
       <div className="article-cards">
         <div className="cards">{CARDS}</div>
         </div>
         <Link to="/articles">
       <button className="seemore-button">
-            See More
+            See All
         </button>
         </Link>
       </div>
-      <hr className="article-hr"></hr>
       </>
     );
   }
 
 
-export default ArticleCards;
+export default withRouter(ArticleCards);
