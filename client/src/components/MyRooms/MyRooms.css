@@ -5,3 +5,9 @@ h2 {
   font-weight: 900;
   padding-left: 5%;
 }
+
+.myroom-image {
+  height: 25vw;
+  width: 25vw;
+  margin: 2.5vw;
+}
