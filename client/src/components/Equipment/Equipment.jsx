@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 
 function Equipment(props) {
   return (
@@ -11,9 +12,11 @@ function Equipment(props) {
         <img className='image' src={plug} alt='An eco-friendly plug'/>
         <img className='image' src={light} alt='An Edison light bulb' /> */}
       </div>
-      <button className="seemore-button" disabled>
-          See All
-        </button>
+        <Link className="equipment-link" to="/myequipment">  
+      <button className="seemore-button">
+            See All
+      </button>
+      </Link>
     </div>
     
   </>
