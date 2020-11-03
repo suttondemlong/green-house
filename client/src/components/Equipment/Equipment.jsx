@@ -3,7 +3,6 @@ import React from 'react';
 function Equipment(props) {
   return (
     <>
-    <hr className="chat-hr"></hr>
     <div className='buying'>
       <h2>My Equipment</h2>
       <div className='items'>

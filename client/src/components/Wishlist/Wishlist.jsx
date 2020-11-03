@@ -8,7 +8,6 @@ import add from "../../assets/plus.png"
 function Wishlist(props) {
   return (
     <>
-    <hr className="chat-hr"></hr>
     <div className='wishlist'>
       <h2>My Wishlist</h2>
       <div className='wishlist-items'>

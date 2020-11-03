@@ -8,7 +8,6 @@ import add from "../../assets/plus.png"
 function Reviews(props) {
   return (
     <>
-    <hr className="chat-hr"></hr>
     <div className='reviews'>
       <h2>My Reviews</h2>
       <div className='review-items'>
@@ -21,8 +20,6 @@ function Reviews(props) {
           See All
         </button>
     </div>
-    
-    <hr className="chat-hr"></hr>
   </>
   );
 }
