@@ -1,3 +1,50 @@
+.savings-overall-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.savings-main-title {
+  text-align: left;
+}
+.savings-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.savings-icon {
+  width: 25px;
+}
+.money-saved-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .gauge {
-  height: 150;
+  height: 25px;
+}
+
+.energy-saved-container {
+  display: flex;
+  flex-direction: column;
+}
+.savings-watts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.savings-trees {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.water-saved {
+  display: flex;
+  flex-direction: column;
+}
+.savings-gallons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
