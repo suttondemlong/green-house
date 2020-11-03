@@ -1,12 +1,14 @@
 .my-equip-rooms {
   display: flex;
-  flex-direction: column;
+  flex-direction: column 1fr;
   padding: 100px;
   padding-top: 80px;
+  justify-content: center;
 }
 
 .room-title {
-  font-size: 3vw;
+  color: #42593e;
+  font-size: 2vw;
   letter-spacing: 0.25vw;
   padding: 0.5vw;
   font-family: "Oxygen", sans-serif;
@@ -14,19 +16,21 @@
 }
 
 .room-stats {
+  font-size: 1vw;
   padding: 0.5vw;
   letter-spacing: 0.1vw;
   font-family: "Barlow";
 }
 
 .room-items {
+  font-size: 1vw;
   padding: 0.5vw;
   letter-spacing: 0.1vw;
   font-family: "Barlow";
 }
 
 .equip-rooms-img {
-  width: 40%;
+  width: 30%;
   height: auto;
   padding: 0 0.5vw;
 }
