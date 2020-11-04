@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import '../EquipmentDetail/EquipmentDetail'
 import { getEquipment } from "../../services/equipments"
-import {useParams} from "react-router-dom"
+import { useParams } from "react-router-dom"
+import energy from '../../assets/noun_Energy_2965874.png'
 
 function EquipmentDetail(props) {
   const [detail, setDetail] = useState([])
