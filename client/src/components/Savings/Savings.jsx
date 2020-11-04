@@ -39,7 +39,7 @@ function Savings(props) {
           </div>
         </div>
     </div>
-    <button className="basic-button">View Details</button>
+    <button ID="view-details-button" className="basic-button">View Details</button>
     </div>
   );
 }

@@ -9,6 +9,7 @@
   margin-left: 5%;
   color: #3d3c3c;
 }
+
 .savings-items-container {
   display: flex;
   flex-direction: row;
@@ -42,7 +43,8 @@
 .energy-saved-container {
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 15vw;
+  margin: 0 2vw;
   text-align: right;
 }
 
@@ -59,10 +61,16 @@
 .water-saved-container {
   display: flex;
   flex-direction: column;
+  text-align: right;
+  margin: 0 2vw;
 }
 
 .savings-gallons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+#view-details-button {
+  margin: 5px auto;
 }
