@@ -1,0 +1,16 @@
+.comparison {
+  columns: 300px 2;
+}
+
+.comparison-detail {
+  font-size: 1vw;
+  font-family: "Oxygen", sans-serif;
+}
+
+.checks {
+  width: 1.5vw;
+}
+
+.compare-image {
+  width: 10vw;
+}
