@@ -11,3 +11,10 @@
   height: 80%;
   border-left: 1px solid black;
 }
+
+/* @media screen and (max-width: 800px) {
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+  }
+} */

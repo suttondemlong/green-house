@@ -25,6 +25,9 @@
   justify-content: top;
   width: 20vw;
 }
+.money-saved-integer {
+  font-size: large;
+}
 
 #gauge-title {
   color: #42593e;
@@ -38,10 +41,10 @@
   font-size: 1.2vw;
 }
 
-.energy-saved-container {
+.stat-saved-container {
   display: flex;
   flex-direction: column;
-  width: 13vw;
+  width: 12vw;
   margin: 0 2vw;
   text-align: right;
 }
@@ -68,3 +71,6 @@
 .calculations {
   font-size: small;
 }
+
+/* @media screen and (max-width: 800px) {
+} */
