@@ -8,3 +8,11 @@
   color: #3d3c3c;
   margin-left: 20px;
 }
+
+@media screen and (max-width: 500px) {
+  .seemore-button {
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
+  }
+}

@@ -59,4 +59,9 @@
   .reviews > h2 {
     text-align: center;
   }
+  .seemore-button {
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
+  }
 }

@@ -7,7 +7,6 @@ import livingroom from "../../assets/livingroom.jpg"
 function MyRooms(props) {
   return (
     <div>
-      <hr className="chat-hr"></hr>
       <div className="my-rooms">
         <h2>My Rooms</h2>
         <div className='rooms'>

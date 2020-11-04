@@ -4,7 +4,6 @@ import "./ChatHomePage.css";
 function ChatHomePage(props) {
   return (
     <>
-      <hr className="chat-hr"></hr>
       <div className="chat-container">
         <p className="paragraph">
           Want to cut through the noise and just talk to someone who can help?
@@ -20,7 +19,6 @@ function ChatHomePage(props) {
           Chat with our Experts
         </button>
       </div>
-      <hr className="chat-hr"></hr>
     </>
   );
 }

@@ -61,10 +61,13 @@
 
   .app-name {
     font-size: smaller;
+    margin-right: 3vw;
   }
 
   .links {
     font-size: 5px;
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
 
   .nav-search-bar {
@@ -72,12 +75,17 @@
     height: 1vw;
     font-size: 5px;
     padding: 5px;
-    margin-right: 45px;
+    margin-right: 5vw;
+    margin-left: 3vw;
   }
 
   .login-icon {
     height: 30px;
     width: 30px;
-    /* margin-right: 5%; */
+    margin: 0 auto;
+  }
+
+  .login-icon-link {
+    margin: 0 auto;
   }
 }
