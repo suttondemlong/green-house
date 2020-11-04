@@ -7,7 +7,7 @@ function SimilarItems(props) {
   return (
     <div>
       <Layout>
-      <SimilarItemsProducts />
+        <SimilarItemsProducts />
       </Layout>
     </div>
   );
