@@ -9,6 +9,7 @@ import ArticleEdit from "./screens/ArticleEdit/ArticleEdit"
 import Dashboard from "./screens/Dashboard/Dashboard"
 import MyEquipment from "./screens/MyEquipment/MyEquipment"
 import MyAccount from "./screens/MyAccount/MyAccount"
+import Equipments from "./screens/Equipments/Equipments";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/myequipment" component={MyEquipment}/>
         <Route exact path="/MyAccount" component={MyAccount} />
+        <Route exact path='/equipments' component={Equipments} />
       </Switch>
     </div>
   );
