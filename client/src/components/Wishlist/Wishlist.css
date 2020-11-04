@@ -53,8 +53,13 @@
   color: #FF5C00;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .wishlist > h2 {
     text-align: center;
+  }
+  .seemore-button {
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
   }
 }

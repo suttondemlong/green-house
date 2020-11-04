@@ -8,7 +8,7 @@ function UserInformation(props) {
   return (
     <div className="userinformation">
       <div className="user-left-div">
-      <img className='userinfo-image' src={userpic} alt='User Picture' />
+      <img className='userinfo-image' src={userpic} alt='User' />
         <p className='user-change'>Change Photo</p>
       </div>
       <div className="user-right-div">

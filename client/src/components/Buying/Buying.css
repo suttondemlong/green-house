@@ -25,20 +25,25 @@
 .seemore-button {
   font-size: 16px;
   color: #ffffff;
-  background-color: #42593E;
+  background-color: #42593e;
   border: 0;
   width: 200px;
   height: 40px;
   -webkit-appearance: none;
   margin: 30px auto;
-  }
-
-.seemore-button:hover {
-  color: #FF5C00;
 }
 
-@media screen and (max-width: 400px) {
+.seemore-button:hover {
+  color: #ff5c00;
+}
+
+@media screen and (max-width: 500px) {
   .buying > h2 {
     text-align: center;
+  }
+  .seemore-button {
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
   }
 }

@@ -5,7 +5,6 @@ import "./MyEquipmentRooms.css"
 function MyEquipmentRooms(props) {
   return (
     <div>
-       <hr className="chat-hr"></hr>
       <div className="my-equip-rooms">
         <img className="my-equip-rooms-img" src={livingroom} alt='livingroom' />
           <div className="room-info">

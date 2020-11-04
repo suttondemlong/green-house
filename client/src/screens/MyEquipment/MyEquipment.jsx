@@ -11,8 +11,11 @@ function MyEquipment(props) {
     <div>
       <Layout >
         <Equipment />
+        <hr className="general-hr"></hr>
         <MyRooms />
+        <hr className="general-hr"></hr>
         <MyEquipmentRooms />
+        <hr className="general-hr"></hr>
         <RoomsEquipment />
       </Layout>
       </div>
