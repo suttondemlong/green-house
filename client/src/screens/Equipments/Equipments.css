@@ -1,0 +1,14 @@
+.equipments {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.equipments-user {
+  color: #000000;
+  font-weight: 800;
+  text-align: left;
+  padding-left: 4%;
+}

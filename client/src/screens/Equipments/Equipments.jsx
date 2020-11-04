@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Equipments.css'
 import Layout from '../../components/shared/Layout/Layout'
 import Equipment from "../../components/Equipment/Equipment"
 import { getEquipments } from "../../services/equipments";
@@ -23,8 +24,8 @@ function Equipments(props) {
 
   return (
     <Layout>
-      <div>
-        <div>Test</div>
+      <div className="equipment-container">
+      <h2 className="equipments-user">Add Equipment</h2>
     <div className="equipments">{equipmentsJSX}</div>
     </div>
     </Layout>
