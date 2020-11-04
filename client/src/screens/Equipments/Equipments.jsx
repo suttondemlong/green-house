@@ -8,7 +8,8 @@ import Search from '../../components/Search/Search';
 function Equipments(props) {
   const [equipments, setEquipments] = useState([])
   const [queriedEquipments, SetQueriedEquipments] = useState([])
-
+  const [searchValue, setSearchValue] = useState('')
+  
   useEffect(() => {
     const fetchEquipments = async () => {
       const equipments = await getEquipments()
@@ -21,6 +22,7 @@ function Equipments(props) {
   const handleSearch = event => {
     const searchedEquipments = equipments.filter(equipments => equipments.name.toLowerCase().includes(event.target.value.toLowerCase()))
     SetQueriedEquipments(searchedEquipments)
+    setSearchValue(event.target.value)
   }
 
   const handleSubmit = event => event.preventDefault()
@@ -37,7 +39,8 @@ function Equipments(props) {
     <Layout>
       <div className="equipment-container">
         <h2 className="equipments-user">Add Equipment</h2>
-        <Search onSubmit={handleSubmit} onChange={handleSearch}/>
+        <Search onSubmit={handleSubmit} onChange={handleSearch} searchValue={searchValue}/>
+        {(searchValue === '') ? <h2></h2> : <h2>Results For {searchValue} </h2>}
     <div className="equipments">{equipmentsJSX}</div>
     </div>
     </Layout>

@@ -2,18 +2,21 @@ import React from 'react'
 import './Search.css'
 
 const Search = (props) => {
-    return (
+  return (
+    <>
         <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
             <input
                 className="search-input"
-                value={props.value}
+                value={props.searchValue}
                 onChange={(e) => props.onChange(e)}
                 name="Search"
                 placeholder="Search"
-                type="text"
+                type="search"
+                results={5}
                 autoFocus
             />
-        </form>
+      </form>
+    </>
     )
 }
 
