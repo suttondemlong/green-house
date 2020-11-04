@@ -1,16 +1,16 @@
 import React from 'react';
 import Layout from "../../components/shared/Layout/Layout"
 import "./MyEquipment.css"
-import Equipment from "../../components/Equipment/Equipment"
+import MyEquipment from "../../components/MyEquipment/MyEquipment"
 import MyRooms from "../../components/MyRooms/MyRooms"
 import MyEquipmentRooms from "../../components/MyEquipmentRooms/MyEquipmentRooms"
 import RoomsEquipment from "../../components/RoomsEquipment/RoomsEquipment"
 
-function MyEquipment(props) {
+function MyEquipmentScreen(props) {
   return (
     <div>
       <Layout >
-        <Equipment />
+        <MyEquipment />
         <hr className="general-hr"></hr>
         <MyRooms />
         <hr className="general-hr"></hr>
@@ -22,4 +22,4 @@ function MyEquipment(props) {
   );
 }
 
-export default MyEquipment;
+export default MyEquipmentScreen;
