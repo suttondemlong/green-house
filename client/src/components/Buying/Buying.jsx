@@ -14,9 +14,7 @@ function Buying(props) {
         <img className='image' src={plug} alt='An eco-friendly plug'/>
         <img className='image' src={light} alt='An Edison light bulb' />
       </div>
-      <button className="seemore-button" disabled>
-          See More
-        </button>
+      <button className="basic-button" disabled>See More</button>
     </div>
   );
 }

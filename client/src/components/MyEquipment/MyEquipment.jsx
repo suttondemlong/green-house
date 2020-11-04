@@ -20,9 +20,7 @@ function MyEquipment(props) {
         </Link>
       </div>
         <Link className="my-equipment-link" to="/myequipment">  
-      <button className="seemore-button">
-            See All
-      </button>
+      <button className="basic-button">See All</button>
       </Link>
     </div>
     

@@ -1,5 +1,13 @@
-div.stats-container {
+.stats-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: space between;
+  height: 300px;
+}
+
+.stats-vertical-line {
+  margin: auto 3px;
+  height: 80%;
+  border-left: 1px solid black;
 }

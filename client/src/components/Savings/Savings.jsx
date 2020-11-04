@@ -11,37 +11,35 @@ function Savings(props) {
       <h2 className="savings-main-title">Savings</h2>
       <div className='savings-items-container'>
       <div className='money-saved-container'>
-      <h5>Total Money Saved</h5>
+        <div className="gauge-title">Total Money Saved</div>
         <div className="gauge">  
         <GaugeChart id="gauge-chart1"
-        nrOfLevels={20}
+          nrOfLevels={20}
           percent={0.86}
           />
-          </div>
+        </div>
       </div>
         <div className='energy-saved-container'>
-        <h5>Total Energy Saved</h5>
+        <div className="inner-titles">Total Energy Saved</div>
           <div className='savings-watts'>
           <img className="savings-icon" src={energy} alt="energy-icon" />
             <p>200 wtts</p>
           </div>
-          <h5>This is equivalent to saving</h5>
+          <div className="inner-titles">This is equivalent to saving</div>
           <div className='savings-trees'>
           <img className="savings-icon" src={tree} alt='tree-icon' />
             <p>100 trees</p>
           </div>
-          <button className="view-button">
-            View Details
-        </button>
         </div>
       <div className="water-saved-container">
-        <h5>Total Water Saved</h5>
+        <div className="inner-titles">Total Water Saved</div>
           <div className='savings-gallons'>
             <img className="savings-icon" src={water} alt='water-droplet-icon'/>
             <p>36 Gallons</p>
           </div>
         </div>
     </div>
+    <button ID="view-details-button" className="basic-button">View Details</button>
     </div>
   );
 }

@@ -16,9 +16,7 @@ function Reviews(props) {
           <img className='review-image-nest' src={nest} alt='Nest thermostat' />
           <img className='review-image-add' src={add} alt='Add a Review' />
       </div>
-      <button className="seemore-button" disabled>
-          See All
-        </button>
+      <button className="basic-button" disabled>See All</button>
     </div>
   </>
   );

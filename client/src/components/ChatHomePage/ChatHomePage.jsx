@@ -15,7 +15,7 @@ function ChatHomePage(props) {
         <p className="paragraph-conversation">
           Have a conversation, ask questions, get help- we are here for YOU.
         </p>
-        <button className="chat-button" disabled>
+        <button className="basic-button" disabled>
           Chat with our Experts
         </button>
       </div>

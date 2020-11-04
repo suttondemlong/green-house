@@ -1,11 +1,12 @@
-/* .badges-container {
+.badges-container {
   display: flex;
   flex-direction: column;
-} */
+  align-content: space-between;
+}
 
 .badges-title {
   text-align: left;
-  color: #42593e;
+  color: #3d3c3c;
   margin-left: 20px;
 }
 

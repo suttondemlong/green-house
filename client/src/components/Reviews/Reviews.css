@@ -40,7 +40,7 @@
   width: 15%;
 }
 
-.seemore-button {
+/* .seemore-button {
   font-size: 16px;
   color: #ffffff;
   background-color: #42593E;
@@ -53,15 +53,15 @@
 
 .seemore-button:hover {
   color: #FF5C00;
-}
+} */
 
 @media screen and (max-width: 400px) {
   .reviews > h2 {
     text-align: center;
   }
-  .seemore-button {
+  /* .seemore-button {
     font-size: 12px;
     width: 150px;
     height: 30px;
-  }
+  } */
 }

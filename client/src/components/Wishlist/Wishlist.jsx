@@ -16,9 +16,7 @@ function Wishlist(props) {
           <img className='wishlist-image-nest' src={nest} alt='Nest thermostat' />
           <img className='wishlist-image-add' src={add} alt='My Wishlist' />
       </div>
-      <button className="seemore-button" disabled>
-          See All
-        </button>
+      <button className="basic-button" disabled>See All</button>
     </div>
     
   </>
