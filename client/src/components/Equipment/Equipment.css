@@ -1,0 +1,17 @@
+.equipment {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  transition: 250ms all;
+  margin-bottom: 30px;
+  min-width: 250px;
+}
+
+.equipment-image {
+  width: 200px;
+  height: 200px;
+}
+
+.equipment-image:hover {
+  transform: scale(1.2);
+}

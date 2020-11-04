@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Equipments.css'
 import Layout from '../../components/shared/Layout/Layout'
 import Equipment from "../../components/Equipment/Equipment"
 import { getEquipments } from "../../services/equipments";
