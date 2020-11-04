@@ -11,31 +11,29 @@ function Savings(props) {
       <h2 className="savings-main-title">Savings</h2>
       <div className='savings-items-container'>
       <div className='money-saved-container'>
-        <div className="gauge-title">Total Money Saved</div>
-        <div className="gauge">  
+        <div className="inner-titles" id='gauge-title'>Total Money Saved</div>  
         <GaugeChart id="gauge-chart1"
           nrOfLevels={20}
           percent={0.86}
           />
-        </div>
       </div>
         <div className='energy-saved-container'>
         <div className="inner-titles">Total Energy Saved</div>
-          <div className='savings-watts'>
+          <div className='savings-stats'>
           <img className="savings-icon" src={energy} alt="energy-icon" />
-            <p>200 wtts</p>
+            <div className="calculations">200 wtts</div>
           </div>
           <div className="inner-titles">This is equivalent to saving</div>
-          <div className='savings-trees'>
+          <div className='savings-stats'>
           <img className="savings-icon" src={tree} alt='tree-icon' />
-            <p>100 trees</p>
+            <div className="calculations">100 trees</div>
           </div>
         </div>
       <div className="water-saved-container">
         <div className="inner-titles">Total Water Saved</div>
-          <div className='savings-gallons'>
+          <div className='savings-stats'>
             <img className="savings-icon" src={water} alt='water-droplet-icon'/>
-            <p>36 Gallons</p>
+            <div className="calculations">36 Gallons</div>
           </div>
         </div>
     </div>

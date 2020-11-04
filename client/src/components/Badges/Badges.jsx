@@ -6,9 +6,7 @@ function Badges(props) {
   return (
     <div className="badges-container">
       <h2 className="badges-title">Badges</h2>
-      <div className="badges-images">
-        <img className="badge-image" src={badges} alt="" />
-      </div>
+      <img className="badge-image" src={badges} alt="" />
       <button className="basic-button">See All</button>
     </div>
   );
