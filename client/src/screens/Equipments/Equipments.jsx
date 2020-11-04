@@ -24,8 +24,8 @@ function Equipments(props) {
 
   return (
     <Layout>
-      <div>
-        <div>Test</div>
+      <div className="equipment-container">
+      <h2 className="equipments-user">Add Equipment</h2>
     <div className="equipments">{equipmentsJSX}</div>
     </div>
     </Layout>

@@ -1,3 +1,8 @@
+.equipment-container {
+  padding: 4%;
+  padding-bottom: 2vh;
+}
+
 .equipment {
   display: flex;
   flex-direction: column;
