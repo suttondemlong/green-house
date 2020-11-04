@@ -11,3 +11,11 @@ h2 {
   width: 25vw;
   margin: 2.5vw;
 }
+
+@media screen and (max-width: 500px) {
+  .user-add-button {
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
+  }
+}

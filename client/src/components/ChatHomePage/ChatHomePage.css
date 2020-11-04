@@ -37,3 +37,13 @@ height: 40px;
 .chat-button:hover {
   color: #FF5C00;
 }
+
+@media screen and (max-width: 500px) {
+  .chat-button {
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
+  }
+
+}
+
