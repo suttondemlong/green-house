@@ -1,32 +1,35 @@
 .savings-overall-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-content: top;
 }
 .savings-main-title {
   text-align: left;
+  width: 100%;
+  margin-left: 5%;
   color: #3d3c3c;
 }
 .savings-items-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: top;
 }
 .savings-icon {
-  width: 25px;
+  width: 30px;
+  height: auto;
 }
 .money-saved-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .money-saved-container > h5 {
   color: #42593e;
 }
 
 .gauge {
-  height: 25px;
+  width: 100%;
 }
 
 .energy-saved-container {
