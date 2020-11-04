@@ -11,6 +11,7 @@ import MyEquipment from "./screens/MyEquipment/MyEquipment"
 import MyAccount from "./screens/MyAccount/MyAccount"
 import EquipmentDetail from "./screens/EquipmentDetail/EquipmentDetail"
 import Equipments from "./screens/Equipments/Equipments";
+import SimilarItems from "./screens/SimilarItems/SimilarItems"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/MyAccount" component={MyAccount} />
         <Route exact path="/equipments/:id/detail" component={EquipmentDetail} />
         <Route exact path='/equipments' component={Equipments} />
+        <Route exact path='/similaritems' component={SimilarItems} />
       </Switch>
     </div>
   );
