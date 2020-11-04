@@ -26,6 +26,7 @@ function EquipmentDetail(props) {
       <h2>Equipment Details</h2>
       <img src={detail.imgURL} alt={detail.name} />
       <p>{detail.name}</p>
+      <hr className='general-hr'></hr>
     </div>
   );
 }
