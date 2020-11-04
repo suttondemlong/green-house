@@ -1,3 +1,8 @@
+.roomsequip-add-image {
+  height: 15%;
+  width: 15%;
+}
+
 @media screen and (max-width: 500px) {
   .user-add-button {
     font-size: 12px;
