@@ -4,7 +4,7 @@ import light from "../../assets/light-bulb1.jpeg"
 import plug from "../../assets/plug1.jpg"
 import solar from "../../assets/solar-panel.jpeg"
 
-function Equipment(props) {
+function MyEquipment(props) {
   return (
     <>
     <div className='buying'>
@@ -14,7 +14,7 @@ function Equipment(props) {
         <img className='image' src={plug} alt='An eco-friendly plug'/>
         <img className='image' src={light} alt='An Edison light bulb' />
       </div>
-        <Link className="equipment-link" to="/myequipment">  
+        <Link className="my-equipment-link" to="/myequipment">  
       <button className="seemore-button">
             See All
       </button>
@@ -25,4 +25,4 @@ function Equipment(props) {
   );
 }
 
-export default Equipment;
+export default MyEquipment;
