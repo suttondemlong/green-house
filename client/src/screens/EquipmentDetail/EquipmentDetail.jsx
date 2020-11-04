@@ -3,26 +3,29 @@ import '../EquipmentDetail/EquipmentDetail'
 import { getEquipment } from "../../services/equipments"
 import { useParams } from "react-router-dom"
 import energy from '../../assets/noun_Energy_2965874.png'
+import Layout from '../../components/shared/Layout/Layout';
 
 function EquipmentDetail(props) {
   const [detail, setDetail] = useState([])
-  const [isLoaded, setLoaded] = useState(false)
+  // const [isLoaded, setLoaded] = useState(false)
   const { id } = useParams()
 
   useEffect(() => {
     const fetchEquipment = async () => {
       const res = await getEquipment(id)
       setDetail(res)
-      setLoaded(true)
+      // setLoaded(true)
     }
-   fetchEquipment()
+    fetchEquipment()
+    console.log(detail)
   }, [id])
 
-  if (!isLoaded) {
-    return <h1>Loading...</h1>
-  }
+  // if (!isLoaded) {
+  //   return <h1>Loading...</h1>
+  // }
 
   return (
+    <Layout>
     <div>
       <h2 className="e-detail-title">Equipment Details</h2>
       <img className="e-detail-image" src={detail.imgURL} alt={detail.name} />
@@ -44,7 +47,8 @@ function EquipmentDetail(props) {
           Browse Similar Products
         </button>
       </div>
-    </div>
+      </div>
+      </Layout>
   );
 }
 
