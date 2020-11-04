@@ -1,9 +1,13 @@
 .e-detail-title {
   text-align: left;
+  color: #3d3c3c;
 }
 .e-detail-image {
   width: 300px;
   margin: 10px auto;
+}
+.e-detail-image2 {
+  width: 300px;
 }
 
 .e-detail-name {
@@ -12,17 +16,23 @@
 
 .e-detail-saved-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .e-detail-stats-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.e-detail-stats-container > h5 {
+.e-detail-stats-container > h4 {
   text-align: right;
+  color: #42593e;
+  margin-bottom: 5px;
 }
 
 .e-detail-stats-container > p {
   text-align: right;
+  margin: 0;
+  margin-bottom: 10px;
 }

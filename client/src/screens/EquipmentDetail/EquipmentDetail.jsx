@@ -1,28 +1,28 @@
-import React, {useState, useEffect} from 'react';
-import '../EquipmentDetail/EquipmentDetail'
+import React, { useState, useEffect } from 'react';
+import '../EquipmentDetail/EquipmentDetail.css'
 import { getEquipment } from "../../services/equipments"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import energy from '../../assets/noun_Energy_2965874.png'
 import Layout from '../../components/shared/Layout/Layout';
 
 function EquipmentDetail(props) {
   const [detail, setDetail] = useState([])
-  // const [isLoaded, setLoaded] = useState(false)
+  const [isLoaded, setLoaded] = useState(false)
   const { id } = useParams()
 
   useEffect(() => {
     const fetchEquipment = async () => {
       const res = await getEquipment(id)
       setDetail(res)
-      // setLoaded(true)
+      setLoaded(true)
     }
     fetchEquipment()
     console.log(detail)
-  }, [id])
+  }, [])
 
-  // if (!isLoaded) {
-  //   return <h1>Loading...</h1>
-  // }
+  if (!isLoaded) {
+    return <h1>Loading...</h1>
+  }
 
   return (
     <Layout>
@@ -34,19 +34,21 @@ function EquipmentDetail(props) {
       <hr className='general-hr'></hr>
       <h2 className="e-detail-title">This Item Saved You</h2>
       <div className="e-detail-saved-container">
-        <img className="e-detail-image" src={energy} />
+        <img className="e-detail-image2" src={energy} />
         <div className="e-detail-stats-container">
-          <h5>Total Money Saved</h5>
-          <p>{detail.money}</p>
-          <h5>Total Energy Saved</h5>
-          <p>{detail.energy}</p>
-          <h5>This is equivalent to saving</h5>
-          <p>{detail.trees}</p>
+          <h4>Total Money Saved</h4>
+            <p>${(Math.round( detail.money  * 100) / 100).toFixed(2)}</p>
+          <h4>Total Energy Saved</h4>
+          <p>{detail.energy} wtts</p>
+          <h4>This is equivalent to saving</h4>
+          <p>{detail.trees} trees</p>
         </div>
+        </div>
+        <Link to='/similaritems'>
         <button className="basic-button">
-          Browse Similar Products
+            Browse Similar Products
         </button>
-      </div>
+        </Link>
       </div>
       </Layout>
   );
