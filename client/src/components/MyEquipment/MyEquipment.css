@@ -1,0 +1,47 @@
+.myequipment-image-solar {
+  height: 15%;
+  width: 15%;
+  margin-right: 5%;
+  margin-left: 10%;
+}
+.myequipment-image-plug {
+  height: 15%;
+  width: 15%;
+  margin-right: 5%;
+}
+.myequipment-image-light {
+  height: 15%;
+  width: 15%;
+}
+
+.myequipment-image-add {
+  height: 60%;
+  width: 60%;
+  margin-left: -10%;
+}
+
+.seemore-button {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #42593E;
+  border: 0;
+  width: 200px;
+  height: 40px;
+  -webkit-appearance: none;
+  margin: 30px auto;
+  }
+
+.seemore-button:hover {
+  color: #FF5C00;
+}
+
+@media screen and (max-width: 500px) {
+  .wishlist > h2 {
+    text-align: center;
+  }
+  .seemore-button {
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
+  }
+}

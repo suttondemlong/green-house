@@ -10,6 +10,7 @@ import Dashboard from "./screens/Dashboard/Dashboard"
 import MyEquipment from "./screens/MyEquipment/MyEquipment"
 import MyAccount from "./screens/MyAccount/MyAccount"
 import EquipmentDetail from "./screens/EquipmentDetail/EquipmentDetail"
+import Equipments from "./screens/Equipments/Equipments";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/myequipment" component={MyEquipment}/>
         <Route exact path="/MyAccount" component={MyAccount} />
         <Route exact path="/equipments/:id/detail" component={EquipmentDetail} />
+        <Route exact path='/equipments' component={Equipments} />
       </Switch>
     </div>
   );

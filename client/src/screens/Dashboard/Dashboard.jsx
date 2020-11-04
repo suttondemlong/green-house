@@ -2,7 +2,7 @@ import React from "react";
 import './Dashboard.css'
 import ArticleCards from "../../components/ArticleCards/ArticleCards";
 import Stats from '../../components/Stats/Stats'
-import Equipment from "../../components/Equipment/Equipment";
+import MyEquipment from "../../components/MyEquipment/MyEquipment";
 import Reviews from "../../components/Reviews/Reviews";
 import Layout from '../../components/shared/Layout/Layout'
 import Wishlist from "../../components/Wishlist/Wishlist";
@@ -15,7 +15,7 @@ function Dashboard(props) {
         <hr className="general-hr"></hr>
         <Stats />
         <hr className="general-hr"></hr>
-        <Equipment />
+        <MyEquipment />
         <hr className="general-hr"></hr>
         <Wishlist />
         <hr className="general-hr"></hr>
