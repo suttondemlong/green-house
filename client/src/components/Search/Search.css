@@ -1,0 +1,17 @@
+.search-input { 
+	color: #000000;  
+	text-align: left;
+	cursor: pointer;
+	/* display: block;  */
+  width: 30%;
+  border-radius: 0%; 
+  border: 1px solid black;
+  letter-spacing: 1px;
+  font-size: 16px;              
+  word-spacing: 20px;
+  outline: none;               
+}
+
+.search-input::placeholder {
+  color: black
+}
