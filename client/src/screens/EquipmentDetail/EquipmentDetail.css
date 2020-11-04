@@ -1,0 +1,28 @@
+.e-detail-title {
+  text-align: left;
+}
+.e-detail-image {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.e-detail-name {
+  max-width: 5px auto;
+}
+
+.e-detail-saved-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.e-detail-stats-container {
+  display: flex;
+  flex-direction: column;
+}
+.e-detail-stats-container > h5 {
+  text-align: right;
+}
+
+.e-detail-stats-container > p {
+  text-align: right;
+}
