@@ -15,9 +15,7 @@ function MyEquipment(props) {
         <img className='image' src={light} alt='An Edison light bulb' />
       </div>
         <Link className="my-equipment-link" to="/myequipment">  
-      <button className="seemore-button">
-            See All
-      </button>
+      <button className="basic-button">See All</button>
       </Link>
     </div>
     

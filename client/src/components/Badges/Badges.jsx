@@ -9,7 +9,7 @@ function Badges(props) {
       <div className="badges-images">
         <img className="badge-image" src={badges} alt="" />
       </div>
-      <button className="seemore-button">See All</button>
+      <button className="basic-button">See All</button>
     </div>
   );
 }

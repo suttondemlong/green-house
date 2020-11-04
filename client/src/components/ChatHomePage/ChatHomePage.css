@@ -1,8 +1,8 @@
 .chat-container {
-font-size: 16px;
-text-align: center;
-margin-top: 30px;
-margin-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .chat-hr {
@@ -11,8 +11,8 @@ margin-bottom: 30px;
 }
 
 .all-caps {
-font-size: 24px;
-color: #42593E
+  font-size: 24px;
+  color: #42593e;
 }
 
 .paragraph-chitChat {
@@ -24,7 +24,7 @@ color: #42593E
   margin-bottom: 30px;
 }
 
-.chat-button {
+/* .chat-button {
 font-size: 16px;
 color: #ffffff;
 background-color: #42593E;
@@ -36,14 +36,13 @@ height: 40px;
 
 .chat-button:hover {
   color: #FF5C00;
-}
+} */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .chat-button {
     font-size: 12px;
     width: 150px;
     height: 30px;
   }
 
-}
-
+} */

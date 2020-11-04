@@ -37,9 +37,7 @@ const  ArticleCards =(props) => {
         <div className="cards">{CARDS}</div>
         </div>
         <Link to="/articles">
-      <button className="seemore-button">
-            See All
-        </button>
+          <button className="basic-button">See All</button>
         </Link>
       </div>
       </>

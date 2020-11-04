@@ -14,9 +14,7 @@ function MyRooms(props) {
         <img className='myroom-image' src={kitchen} alt='kitchen'/>
         <img className='myroom-image' src={livingroom} alt='livingroom' />
         </div>
-        <button className="seemore-button">
-          See All
-        </button>
+        <button className="basic-button">See All</button>
       </div>
     </div>
   );

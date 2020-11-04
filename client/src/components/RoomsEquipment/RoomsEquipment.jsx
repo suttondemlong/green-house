@@ -12,9 +12,7 @@ function RoomsEquipment(props) {
         <img className='image' src={plug} alt='An eco-friendly plug'/>
         <img className='image' src={light} alt='An Edison light bulb' />
       </div>
-      <button className="seemore-button">
-            See All
-      </button>
+      <button className="basic-button">See All</button>
     </div>
   );
 }
