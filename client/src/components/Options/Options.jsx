@@ -7,7 +7,7 @@ function Options(props) {
       <h3 className='options-title'>{props.title}</h3>
       <div className='p-container'>
         <p className='p'>{props.p}</p>
-        </div>
+      </div>
     </div>
   );
 }

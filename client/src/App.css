@@ -11,3 +11,26 @@
   border: 2px solid black;
   width: 90%;
 }
+
+.basic-button {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #42593e;
+  border: 0;
+  width: 200px;
+  height: 40px;
+  -webkit-appearance: none;
+  margin: 30px auto;
+}
+
+.basic-button:hover {
+  color: #ff5c00;
+}
+
+@media screen and (max-width: 500px) {
+  .basic-button {
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
+  }
+}

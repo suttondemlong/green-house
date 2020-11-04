@@ -7,7 +7,7 @@ function Stats(props) {
   return (
     <div className='stats-container'>
       <Savings />
-      <div className='vertical-line'></div>
+      <div className='stats-vertical-line'></div>
       <Badges />
       </div>
   );
