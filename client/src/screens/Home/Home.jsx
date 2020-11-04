@@ -14,8 +14,11 @@ function Home(props) {
         <div className="content-container">
           <HomeImage />
           <Directions />
+          <hr className="general-hr"></hr>
           <ChatHomePage />
+          <hr className="general-hr"></hr>
           <ArticleCards />
+          <hr className="general-hr"></hr>
           <Buying />
         </div>
       </div>
