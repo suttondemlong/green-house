@@ -1,0 +1,32 @@
+.sort-container {
+  display: flex;
+  width: 80vw;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+.label-sort {
+  font-size: 12px;
+  font-family: 'Borrow', sans-serif;
+  padding-right: 10px;
+  align-items: center;
+  margin-top: -5px;
+  margin-right: -70px;
+}
+
+.sort {
+  height: 25px;
+  cursor:pointer;
+  border: none;
+  font-size: 12px;
+  border: 1px solid #000000;
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  .sort-container {
+      width: 100%;
+      justify-content: center;
+      margin: 20px;
+  }
+}
