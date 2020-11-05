@@ -9,8 +9,20 @@
 
 .checks {
   width: 1.5vw;
+  margin-left: 2%;
 }
 
 .compare-image {
   width: 10vw;
 }
+
+.compare-next {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 40%;
+}
+
+@media screen and (max-width: 716px) {
+  
+} 
