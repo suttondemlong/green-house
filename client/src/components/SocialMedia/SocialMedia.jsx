@@ -21,9 +21,11 @@ function SocialMedia(props) {
 
   return (
     <div>
-      <h2>SOCIAL MEDIA</h2>
+      <h2 className='social-title'>SOCIAL MEDIA</h2>
+      <div className='socialmedia-icons'>
       <img className='instagram' src={instagram} alt='instagram-logo'/>
-      <img className='facebook' src={facebook} alt='facebook-logo' />
+        <img className='facebook' src={facebook} alt='facebook-logo' />
+        </div>
       <div className='social-add'>add account</div>
       <button className='social-button' onClick={handleClick}>Delete My Account</button>
       {(toggle === false) ? null : <h3>We're sad to see you leave!</h3>}
