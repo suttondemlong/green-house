@@ -1,5 +1,5 @@
 .e-detail-title {
-  font-size: 2.47vh;
+  font-size: 24px;
   text-align: left;
   color: #3d3c3c;
 }
@@ -29,7 +29,7 @@
   justify-content: center;
 }
 .e-detail-stats-container > h4 {
-  font-size: 1.65vh;
+  font-size: 16px;
   text-align: right;
   color: #42593e;
   margin-bottom: 5px;

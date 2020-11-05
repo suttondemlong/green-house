@@ -1,5 +1,6 @@
 .comparison {
   columns: 300px 2;
+  margin-bottom: 7%;
 }
 
 .comparison-detail {
@@ -14,6 +15,10 @@
 
 .compare-image {
   width: 10vw;
+}
+
+.items-similar {
+  margin-bottom: 5%;
 }
 
 .compare-next {

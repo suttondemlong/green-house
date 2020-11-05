@@ -28,7 +28,7 @@ function SocialMedia(props) {
         </div>
       <div className='social-add'>add account</div>
       <button className='social-button' onClick={handleClick}>Delete My Account</button>
-      {(toggle === false) ? null : <h3>We're sad to see you leave!</h3>}
+      {(toggle === false) ? <h3></h3> : <h3>We're sad to see you leave!</h3>}
     </div>
   );
 }

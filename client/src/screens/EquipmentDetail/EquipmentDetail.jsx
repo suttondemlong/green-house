@@ -17,7 +17,6 @@ function EquipmentDetail(props) {
       setLoaded(true)
     }
     fetchEquipment()
-    console.log(detail)
   }, [])
 
   if (!isLoaded) {
@@ -34,7 +33,7 @@ function EquipmentDetail(props) {
       <hr className='general-hr'></hr>
       <h2 className="e-detail-title">This Item Saved You</h2>
       <div className="e-detail-saved-container">
-        <img className="e-detail-image2" src={energy} />
+        <img className="e-detail-image2" src={energy} alt="detail"/>
         <div className="e-detail-stats-container">
           <h4>Total Money Saved</h4>
             <p>${(Math.round( detail.money  * 100) / 100).toFixed(2)}</p>

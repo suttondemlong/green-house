@@ -7,7 +7,7 @@ function Badges(props) {
     <div className="badges-container">
       <h2 className="badges-title">Badges</h2>
       <img className="badge-image" src={badges} alt="" />
-      <button className="basic-button">See All</button>
+      <button className="basic-button" id="badges-button">See All</button>
     </div>
   );
 }
