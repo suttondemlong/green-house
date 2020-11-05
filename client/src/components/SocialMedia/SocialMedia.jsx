@@ -1,22 +1,17 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import "./SocialMedia.css"
 import instagram from "../../assets/social-media/Instagram.png"
 import facebook from "../../assets/social-media/Facebook.png"
 
 function SocialMedia(props) {
   const [toggle, setToggle] = useState(false)
-  
-  useEffect(() => {
-    setTimeout(() => {
-      setToggle(toggle);
-    }, 10000);
-    setToggle(false);
-
-  }, []);
 
   const handleClick = (e) => {
     e.preventDefault()
     setToggle(true)
+    setTimeout(() => {
+      setToggle(false);
+    }, 10000);
   }
 
   return (
@@ -28,7 +23,7 @@ function SocialMedia(props) {
         </div>
       <div className='social-add'>add account</div>
       <button className='social-button' onClick={handleClick}>Delete My Account</button>
-      {(toggle === false) ? <h3></h3> : <h3>We're sad to see you leave!</h3>}
+      {(toggle === false) ? <div className="toggle-div"></div> : <h3>We're sad to see you leave!</h3>}
     </div>
   );
 }

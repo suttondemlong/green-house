@@ -17,7 +17,7 @@ function EquipmentDetail(props) {
       setLoaded(true)
     }
     fetchEquipment()
-  }, [])
+  }, [id])
 
   if (!isLoaded) {
     return <h1>Loading...</h1>
