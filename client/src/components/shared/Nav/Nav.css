@@ -12,18 +12,21 @@
 /* Icon is from  Becris flaticon.com*/
 .nav-search-bar {
   height: 1vw;
-  margin-right: 5%;
+  width: 100%;
   background-color: transparent;
   border: 1px solid white;
-  border-radius: 3%;
   color: white;
-  padding-bottom: 3px;
-  padding-left: 4px;
+  font-size: 12px;
+  padding: 5px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search {
   display: flex;
   align-items: center;
+  width: 30%;
 }
 
 .links {
@@ -38,10 +41,9 @@
 
 /* Icon is from: "mavadee" flaticon.com */
 .login-icon {
-  height: 60px;
-  width: 60px;
-  margin-left: -50px;
-  margin-right: 5%;
+  height: auto;
+  width: 5vw;
+  padding-right: 10px;
 }
 
 .search-icon {
@@ -69,14 +71,14 @@
     margin-left: 3vw;
     margin-right: 3vw;
   }
-
+  .search {
+    width: 25%;
+  }
   .nav-search-bar {
-    width: 50px;
+    width: 100%;
     height: 1vw;
     font-size: 5px;
     padding: 5px;
-    margin-right: 5vw;
-    margin-left: 3vw;
   }
 
   .login-icon {
