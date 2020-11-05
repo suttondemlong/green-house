@@ -1,15 +1,14 @@
 .social-add {
   text-decoration: underline;
-  color: #FF5C00;
+  color: #ff5c00;
   display: flex;
   justify-content: flex-end;
   padding-right: 5%;
   margin-bottom: 5%;
-
 }
 
 .social-button {
-  background-color: #FF5C00;
+  background-color: #ff5c00;
   border: none;
   color: #ffffff;
   padding: 10px 80px;
@@ -21,18 +20,21 @@
   border-radius: 16px;
   outline: none;
 }
+.toggle-div {
+  margin: 4%;
+}
 
 .social-title {
-    color: #000000;
-    text-align: left;
-    font-family: "Oxygen", sans-serif;
-    font-size: 18px;
-    font-weight: 900;
-    padding-left: 5%;
+  color: #000000;
+  text-align: left;
+  font-family: "Oxygen", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  padding-left: 5%;
 }
 
 .socialmedia-icons {
-display: flex;
-justify-content: flex-start;
-margin-left: 5%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
 }
