@@ -4,24 +4,47 @@ import Layout from '../../components/shared/Layout/Layout'
 import Equipment from "../../components/Equipment/Equipment"
 import { getEquipments } from "../../services/equipments";
 import Search from '../../components/Search/Search';
+import Sort from '../../components/Sort/Sort'
+import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort"
 
 function Equipments(props) {
   const [equipments, setEquipments] = useState([])
-  const [queriedEquipments, SetQueriedEquipments] = useState([])
+  const [queriedEquipments, setQueriedEquipments] = useState([])
   const [searchValue, setSearchValue] = useState('')
+  const [sortType, setSortType] = useState([])
   
   useEffect(() => {
     const fetchEquipments = async () => {
       const equipments = await getEquipments()
       setEquipments(equipments)
-      SetQueriedEquipments(equipments)
+      setQueriedEquipments(equipments)
     }
    fetchEquipments()
   }, [])
 
+  const handleSort = type => {
+    setSortType(type)
+    switch (type) {
+      case "name-ascending":
+        setQueriedEquipments(AZ(queriedEquipments))
+        break
+      case "name-descending":
+        setQueriedEquipments(ZA(queriedEquipments))
+        break
+      case "price-ascending":
+        setQueriedEquipments(lowestFirst(queriedEquipments))
+        break
+      case "price-descending":
+        setQueriedEquipments(highestFirst(queriedEquipments))
+        break
+      default:
+        break
+    }
+  }
+
   const handleSearch = event => {
     const searchedEquipments = equipments.filter(equipments => equipments.name.toLowerCase().includes(event.target.value.toLowerCase()))
-    SetQueriedEquipments(searchedEquipments)
+    setQueriedEquipments(searchedEquipments, () => handleSort(sortType))
     setSearchValue(event.target.value)
   }
 
@@ -40,7 +63,8 @@ function Equipments(props) {
       <div className="equipment-container">
         <h2 className="equipments-user">Add Equipment</h2>
         <Search onSubmit={handleSubmit} onChange={handleSearch} searchValue={searchValue}/>
-        {(searchValue === '') ? <h2></h2> : <h2>Results For {searchValue} </h2>}
+        {(searchValue === '') ? null : <h2>Results For {searchValue} </h2>}
+        <Sort onSubmit={handleSubmit} onChange={handleSort} queriedEquipments={queriedEquipments}/>
     <div className="equipments">{equipmentsJSX}</div>
     </div>
     </Layout>

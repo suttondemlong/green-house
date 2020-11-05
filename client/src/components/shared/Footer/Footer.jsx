@@ -14,7 +14,7 @@ function Footer(props) {
         <div className="left-container">
           <h1 className="footer-logo">GreenHouse</h1>
           <img className='pinterest' src={pinterest} alt='pinterest-logo'/>
-          <img className='instagram' src={instagram} alt='pinterest-logo'/>
+          <img className='instagram' src={instagram} alt='instagram-logo'/>
           <img className='twitter' src={twitter} alt='twitter-logo'/>
           <img className='facebook' src={facebook} alt='facebook-logo'/>
           <img className='linkedin' src={linkedin} alt='linkedin-logo'/>

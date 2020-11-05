@@ -1,7 +1,11 @@
+.stats-children {
+  margin: 0 7%;
+}
+
 .stats-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: space between;
   height: 300px;
 }
@@ -12,9 +16,8 @@
   border-left: 1px solid black;
 }
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .stats-container {
-    display: flex;
-    flex-direction: column;
+    display: contents;
   }
-} */
+}

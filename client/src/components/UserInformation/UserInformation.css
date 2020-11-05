@@ -2,6 +2,7 @@
 .userinformation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .user-left-div {
@@ -94,6 +95,7 @@ color: #FF5C00;
       .userinfo-image{
         width: 40%;
         height: 40%;
+
         }
 
     }
