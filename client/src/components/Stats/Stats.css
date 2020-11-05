@@ -20,4 +20,9 @@
   .stats-container {
     display: contents;
   }
+  .stats-vertical-line {
+    margin: 10vw auto 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
 }
