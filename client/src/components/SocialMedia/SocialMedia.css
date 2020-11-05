@@ -1,6 +1,11 @@
 .social-add {
   text-decoration: underline;
-  color: #FF5C00
+  color: #FF5C00;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+  margin-bottom: 5%;
+
 }
 
 .social-button {
@@ -15,4 +20,19 @@
   cursor: pointer;
   border-radius: 16px;
   outline: none;
+}
+
+.social-title {
+    color: #000000;
+    text-align: left;
+    font-family: "Oxygen", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 5%;
+}
+
+.socialmedia-icons {
+display: flex;
+justify-content: flex-start;
+margin-left: 5%;
 }
