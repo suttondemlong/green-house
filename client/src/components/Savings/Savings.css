@@ -38,7 +38,7 @@
 .inner-titles {
   color: #42593e;
   font-weight: 600;
-  font-size: 1.2vw;
+  font-size: small;
 }
 
 .stat-saved-container {
@@ -72,6 +72,21 @@
   font-size: small;
 }
 
-/* @media screen and (max-width: 800px) {
-  
-} */
+@media screen and (max-width: 800px) {
+  .stat-saved-container {
+    width: 15vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .inner-titles,
+  .calculations {
+    font-size: x-small;
+  }
+  .savings-items-container {
+    justify-content: space-between;
+  }
+  .savings-icon {
+    width: 7vw;
+  }
+}

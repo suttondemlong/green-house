@@ -9,6 +9,21 @@
   color: #3d3c3c;
 }
 
-.badges-image {
+.badge-image {
   width: 300px;
+  /* margin: 0 auto; */
+}
+
+@media screen and (max-width: 800px) {
+  .badge-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .badge-image {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
