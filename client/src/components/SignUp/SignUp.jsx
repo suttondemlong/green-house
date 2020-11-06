@@ -25,9 +25,10 @@ function SignUp(props) {
     const created = await createUser(user);
     setCreated({ created })
   }; 
-    if (isCreated) {
+  if (isCreated) {
     return <Redirect to={"/dashboard"} />
     }
+
 
   return (
     <div>

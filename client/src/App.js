@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import {Route, Switch} from 'react-router-dom'
 import './App.css';
+import {getUser} from "../src/services/users"
 import Home from "./screens/Home/Home";
 import Articles from "./screens/Articles/Articles"
 import ArticleCreate from "./screens/ArticleCreate/ArticleCreate";
@@ -15,6 +16,18 @@ import SimilarItems from "./screens/SimilarItems/SimilarItems"
 import UserSignUp from "./screens/UserSignUp/UserSignUp"
 
 function App() {
+  const [currentUser, setCurrentUser] = useState()
+  // const {id} = "5fa578bac1051a0bbfdb7155";
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const currentUser = await getUser()
+      setCurrentUser(currentUser)
+      console.log(currentUser.name)
+    }
+    fetchUser()
+  }, [])
+    
   return (
     <div className="App">
       <Switch>
@@ -24,12 +37,12 @@ function App() {
         <Route exact path="/articles/:id/edit" component={ArticleEdit} />
         <Route exact path="/articles/:id" component={ArticleDetail} />
         <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/myequipment" component={MyEquipment}/>
-        <Route exact path="/MyAccount" component={MyAccount} />
+        <Route exact path="/myequipment" component={MyEquipment} currentUser={currentUser}/>
+        <Route exact path="/MyAccount" component={MyAccount} currentUser={currentUser}/>
         <Route exact path="/equipments/:id/detail" component={EquipmentDetail} />
         <Route exact path='/equipments' component={Equipments} />
         <Route exact path='/similaritems' component={SimilarItems} />
-        <Route exact path='/signup' component={UserSignUp} />
+        <Route exact path='/signup' component={UserSignUp} currentUser={currentUser}/>
       </Switch>
     </div>
   );
