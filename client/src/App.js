@@ -17,7 +17,6 @@ import UserSignUp from "./screens/UserSignUp/UserSignUp"
 
 function App() {
   const [currentUser, setCurrentUser] = useState()
-  // const {id} = "5fa578bac1051a0bbfdb7155";
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -36,13 +35,13 @@ function App() {
         <Route exact path="/add-article" component={ArticleCreate} />
         <Route exact path="/articles/:id/edit" component={ArticleEdit} />
         <Route exact path="/articles/:id" component={ArticleDetail} />
-        <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/myequipment" component={MyEquipment} currentUser={currentUser}/>
-        <Route exact path="/MyAccount" component={MyAccount} currentUser={currentUser}/>
+        <Route exact path="/dashboard" component={Dashboard}/><Dashboard currentUser={currentUser} /></Route>
+        <Route exact path="/myequipment" component={MyEquipment}/>
+        <Route exact path="/MyAccount" component={MyAccount} />
         <Route exact path="/equipments/:id/detail" component={EquipmentDetail} />
         <Route exact path='/equipments' component={Equipments} />
         <Route exact path='/similaritems' component={SimilarItems} />
-        <Route exact path='/signup' component={UserSignUp} currentUser={currentUser}/>
+        <Route exact path='/signup' component={UserSignUp}/>
       </Switch>
     </div>
   );
