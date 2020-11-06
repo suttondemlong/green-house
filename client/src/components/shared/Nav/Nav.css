@@ -1,5 +1,5 @@
 .nav-bar {
-  display: flex;
+  display: -webkit-flex;
   background-color: #42593e;
   height: 15vw;
   width: 100vw;
@@ -12,21 +12,24 @@
 /* Icon is from  Becris flaticon.com*/
 .nav-search-bar {
   height: 1vw;
-  width: 100%;
+  width: 7%;
   background-color: transparent;
   border: 1px solid white;
   color: white;
   font-size: 12px;
-  padding: 5px 60px;
-  display: flex;
+  padding: 3px 60px;
+  display: -webkit-flex;
   justify-content: center;
   align-items: center;
 }
 
 .search {
   display: flex;
+  -webkit-flex-direction: row;
   align-items: center;
-  width: 30%;
+  justify-content: space-around;
+  width: 25%;
+  padding-right: 2%;
 }
 
 .links {
@@ -56,7 +59,13 @@
   font-size: 10px;
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  .nav-search-bar {
+    padding: 3px 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .nav-bar {
     width: 100%;
   }
@@ -73,18 +82,20 @@
   }
   .search {
     width: 25%;
+    padding-right: 0;
   }
   .nav-search-bar {
     width: 100%;
-    height: 1vw;
+    height: 6px;
     font-size: 5px;
-    padding: 5px;
+    padding: 1px;
   }
 
   .login-icon {
     height: 30px;
     width: 30px;
     margin: 0 auto;
+    padding-left: 5px;
   }
 
   .login-icon-link {
