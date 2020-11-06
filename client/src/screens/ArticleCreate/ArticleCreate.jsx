@@ -26,7 +26,7 @@ function ArticleCreate(props) {
     const created = await createArticle(article);
     setCreated({ created })
   }; 
-    if (isCreated) {
+  if (isCreated) {
     return <Redirect to={"/articles"} />
     }
   
@@ -34,9 +34,9 @@ function ArticleCreate(props) {
   //   alert('Thank you for submitting to the GreenHouse community!')
   //   if (window.comfirm) {
   //     window.location = '/articles'
-  //   }
-    
+  //   }  
   // }
+  
   return (
     <Layout>
       <form className="create-form" onSubmit={handleSumbit}>

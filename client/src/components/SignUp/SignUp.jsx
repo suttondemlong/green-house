@@ -25,10 +25,16 @@ function SignUp(props) {
     const created = await createUser(user);
     setCreated({ created })
   }; 
-    if (isCreated) {
+  if (isCreated) {
     return <Redirect to={"/dashboard"} />
     }
 
+  // const createAlert = () => {
+  //   alert('User Created!')
+  //   if (window.comfirm) {
+  //     window.location = '/signup'
+  //   }
+  // }
 
 
   return (

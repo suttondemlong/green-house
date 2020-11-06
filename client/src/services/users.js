@@ -9,9 +9,9 @@ export const getUsers = async () => {
   }
 }
 
-export const getUser = async id => {
+export const getUser = async () => {
   try {
-      const response = await api.get(`/users/${id}`)
+      const response = await api.get(`/users/5fa578bac1051a0bbfdb7155`)
       return response.data
   } catch (error) {
       throw error
