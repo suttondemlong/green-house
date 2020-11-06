@@ -29,13 +29,6 @@ function SignUp(props) {
     return <Redirect to={"/dashboard"} />
     }
 
-  // const createAlert = () => {
-  //   alert('User Created!')
-  //   if (window.comfirm) {
-  //     window.location = '/signup'
-  //   }
-  // }
-
 
   return (
     <div>
@@ -93,17 +86,10 @@ function SignUp(props) {
           value={user.socialmedia}
           name="socialmedia"
           onChange={handleChange}/>
-        <input
-          className="sign-i-socialmedia"
-          type="text"
-          placeholder="Insert Instagram URL"
-          value={user.socialmedia}
-          name="socialmedia"
-          onChange={handleChange}/>
-      </form>
-      <button className="basic-button" type="submit">
+        <button className="basic-button" type="submit">
         Submit
       </button>
+      </form>
     </div>
   );
 }
