@@ -1,0 +1,35 @@
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sign-i-name::placeholder {
+  color: black;
+}
+.sign-l-name {
+  text-align: left;
+}
+.sign-i-socialmedia::placeholder {
+  color: black;
+}
+.sign-l-socialmedia {
+  text-align: left;
+}
+.sign-i-imgURL::placeholder {
+  color: black;
+}
+.sign-l-imgURL {
+  text-align: left;
+}
+.sign-i-email::placeholder {
+  color: black;
+}
+.sign-l-email {
+  text-align: left;
+}
+.sign-i-password::placeholder {
+  color: black;
+}
+.sign-l-password {
+  text-align: left;
+}
