@@ -29,8 +29,6 @@ function SignUp(props) {
     return <Redirect to={"/dashboard"} />
     }
 
-
-
   return (
     <div>
       <h2>Already have an account?</h2>
@@ -87,17 +85,10 @@ function SignUp(props) {
           value={user.socialmedia}
           name="socialmedia"
           onChange={handleChange}/>
-        <input
-          className="sign-i-socialmedia"
-          type="text"
-          placeholder="Insert Instagram URL"
-          value={user.socialmedia}
-          name="socialmedia"
-          onChange={handleChange}/>
-      </form>
-      <button className="basic-button" type="submit">
+        <button className="basic-button" type="submit">
         Submit
       </button>
+      </form>
     </div>
   );
 }
