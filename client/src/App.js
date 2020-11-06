@@ -35,7 +35,9 @@ function App() {
         <Route exact path="/add-article" component={ArticleCreate} />
         <Route exact path="/articles/:id/edit" component={ArticleEdit} />
         <Route exact path="/articles/:id" component={ArticleDetail} />
-        <Route exact path="/dashboard" component={Dashboard}/><Dashboard currentUser={currentUser} /></Route>
+        <Route exact path="/dashboard">
+          <Dashboard currentUser={currentUser} />
+        </Route>
         <Route exact path="/myequipment" component={MyEquipment}/>
         <Route exact path="/MyAccount" component={MyAccount} />
         <Route exact path="/equipments/:id/detail" component={EquipmentDetail} />
