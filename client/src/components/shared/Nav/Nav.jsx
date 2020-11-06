@@ -15,12 +15,12 @@ function Nav(props) {
         <p className="links">Dashboard</p>
       </Link>
         <p className="links">Meet our Experts</p>
-        <div className="search">
+      <div className="search">
         <p className="nav-search-bar">Search</p> 
-      </div>
       <Link className="login-icon-link" to='/MyAccount'>
       <img className="login-icon" src={login} alt="login-icon" />
       </Link>
+      </div>
     </div>
   );
 }
