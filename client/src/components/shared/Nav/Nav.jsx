@@ -21,7 +21,7 @@ function Nav(props) {
       </Link>
       <div className="search">
         <p className="nav-search-bar">Search</p> 
-      <Link className="login-icon-link" to='/login'>
+      <Link className="login-icon-link" to='/signin'>
       <img className="login-icon" src={login} alt="login-icon" />
       </Link>
       </div>

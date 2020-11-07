@@ -62,10 +62,25 @@ const deleteUser = async (req, res) => {
   }
 }
 
+const signIn = async (req, res) => {
+  try {
+    const { email, password } = req.body
+    const user = await User.findOne({ email: email })
+    console.log(user)
+    if (password === user.password) {
+      return res.json(user)
+    }
+    res.status(401).json({ message: "invalid credentials" })
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+}
+
 module.exports = {
   createUser,
   getUsers,
   getUser,
   updateUser,
-  deleteUser
+  deleteUser,
+  signIn
 }
