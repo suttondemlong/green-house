@@ -1,6 +1,5 @@
 import React from 'react';
 import "./UserInformation.css"
-import userpic from "../../assets/userpic.png"
 
 
 
@@ -8,7 +7,7 @@ function UserInformation(props) {
   return (
     <div className="userinformation">
       <div className="user-left-div">
-      <img className='userinfo-image' src={userpic} alt='User' />
+        {props.currentUser && <img className='userinfo-image' src={props.currentUser.imgURL} alt='User' />}
         <p className='user-change'>Change Photo</p>
       </div>
       <div className="user-right-div">
