@@ -11,7 +11,7 @@ function Dashboard(props) {
   return (
     <Layout>
       <div className="content-container">
-        <h2 className="dashboard-user">Welcome Back Sherie</h2>
+        {props.currentUser && <h2 className="dashboard-user"> Welcome Back {props.currentUser.name}</h2>}
         <hr className="general-hr"></hr>
         <Stats />
         <hr className="general-hr"></hr>

@@ -11,8 +11,8 @@ function MyAccount(props) {
     <Layout>
       <div className="content-container">
         <h2 className="myaccount-title">My Account</h2>
-        <UserInformation />
-        <UserVerification />
+        <UserInformation currentUser={props.currentUser}/>
+        <UserVerification currentUser={props.currentUser}/>
         <Password />
         <SocialMedia />
       </div>

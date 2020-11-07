@@ -11,7 +11,7 @@ export const getUsers = async () => {
 
 export const getUser = async () => {
   try {
-      const response = await api.get(`/users/5fa578bac1051a0bbfdb7155`)
+      const response = await api.get(`/users/5fa46e41e342102b4e7ba5be`)
       return response.data
   } catch (error) {
       throw error

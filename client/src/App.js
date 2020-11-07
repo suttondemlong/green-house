@@ -22,7 +22,6 @@ function App() {
     const fetchUser = async () => {
       const currentUser = await getUser()
       setCurrentUser(currentUser)
-      console.log(currentUser.name)
     }
     fetchUser()
   }, [])
@@ -39,7 +38,9 @@ function App() {
           <Dashboard currentUser={currentUser} />
         </Route>
         <Route exact path="/myequipment" component={MyEquipment}/>
-        <Route exact path="/MyAccount" component={MyAccount} />
+        <Route exact path="/MyAccount">
+          <MyAccount currentUser={currentUser} />
+        </Route>
         <Route exact path="/equipments/:id/detail" component={EquipmentDetail} />
         <Route exact path='/equipments' component={Equipments} />
         <Route exact path='/similaritems' component={SimilarItems} />
