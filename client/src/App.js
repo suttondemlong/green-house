@@ -14,6 +14,7 @@ import EquipmentDetail from "./screens/EquipmentDetail/EquipmentDetail"
 import Equipments from "./screens/Equipments/Equipments";
 import SimilarItems from "./screens/SimilarItems/SimilarItems"
 import UserSignUp from "./screens/UserSignUp/UserSignUp"
+import Login from "./screens/Login/Login"
 
 function App() {
   const [currentUser, setCurrentUser] = useState()
@@ -44,7 +45,8 @@ function App() {
         <Route exact path="/equipments/:id/detail" component={EquipmentDetail} />
         <Route exact path='/equipments' component={Equipments} />
         <Route exact path='/similaritems' component={SimilarItems} />
-        <Route exact path='/signup' component={UserSignUp}/>
+        <Route exact path='/signup' component={UserSignUp} />
+        <Route exact path='/login' component={Login} />
       </Switch>
     </div>
   );

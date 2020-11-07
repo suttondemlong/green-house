@@ -10,14 +10,18 @@ function Nav(props) {
       <Link to='/' style={{textDecoration: 'none', color: '#ffffff'}}>
       <p className="app-name">GreenHouse</p>
       </Link>
+      <Link to='/equipments'style={{textDecoration: 'none', color: '#ffffff'}}>
       <p className="links">Explore Green Tech</p>
+      </Link>
       <Link to='/dashboard' style={{textDecoration: 'none', color: '#ffffff'}}>
         <p className="links">Dashboard</p>
       </Link>
-        <p className="links">Meet our Experts</p>
+      <Link to='/MyAccount'style={{textDecoration: 'none', color: '#ffffff'}}>
+      <p className="links">My Account</p>
+      </Link>
       <div className="search">
         <p className="nav-search-bar">Search</p> 
-      <Link className="login-icon-link" to='/signup'>
+      <Link className="login-icon-link" to='/login'>
       <img className="login-icon" src={login} alt="login-icon" />
       </Link>
       </div>
