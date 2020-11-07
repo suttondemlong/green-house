@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 import './SignUp.css'
 import { createUser } from '../../services/users'
 
@@ -33,9 +33,6 @@ function SignUp(props) {
   return (
     <div>
       <h2>Already have an account?</h2>
-      <Link to="/MyAccount">
-        <button className="basic-button">Log-in</button>
-        </Link>
       <form className="signup-form" onSubmit={handleSumbit}>
         <label className="sign-l-name" htmlFor="name">Name</label>
         <input

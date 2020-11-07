@@ -14,19 +14,22 @@ import EquipmentDetail from "./screens/EquipmentDetail/EquipmentDetail"
 import Equipments from "./screens/Equipments/Equipments";
 import SimilarItems from "./screens/SimilarItems/SimilarItems"
 import UserSignUp from "./screens/UserSignUp/UserSignUp"
+import Login from "./screens/Login/Login"
+import {LoginUserProvider} from "./components/LoginUser/LoginUserContext"
 
 function App() {
-  const [currentUser, setCurrentUser] = useState()
+  // const [currentUser, setCurrentUser] = useState()
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      const currentUser = await getUser()
-      setCurrentUser(currentUser)
-    }
-    fetchUser()
-  }, [])
+  // useEffect(() => {
+  //   const fetchUser = async () => {
+  //     const currentUser = await getUser()
+  //     setCurrentUser(currentUser)
+  //   }
+  //   fetchUser()
+  // }, [])
     
   return (
+    <LoginUserProvider>
     <div className="App">
       <Switch>
         <Route exact path="/" component={Home} />
@@ -34,19 +37,17 @@ function App() {
         <Route exact path="/add-article" component={ArticleCreate} />
         <Route exact path="/articles/:id/edit" component={ArticleEdit} />
         <Route exact path="/articles/:id" component={ArticleDetail} />
-        <Route exact path="/dashboard">
-          <Dashboard currentUser={currentUser} />
-        </Route>
+        <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/myequipment" component={MyEquipment}/>
-        <Route exact path="/MyAccount">
-          <MyAccount currentUser={currentUser} />
-        </Route>
+        <Route exact path="/MyAccount" component={MyAccount} />
         <Route exact path="/equipments/:id/detail" component={EquipmentDetail} />
         <Route exact path='/equipments' component={Equipments} />
         <Route exact path='/similaritems' component={SimilarItems} />
-        <Route exact path='/signup' component={UserSignUp}/>
+        <Route exact path='/signup' component={UserSignUp} />
+        <Route exact path='/signin' component={Login} />
       </Switch>
     </div>
+    </LoginUserProvider>
   );
 }
 

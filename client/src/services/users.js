@@ -9,9 +9,9 @@ export const getUsers = async () => {
   }
 }
 
-export const getUser = async () => {
+export const getUser = async (id) => {
   try {
-      const response = await api.get(`/users/5fa46e41e342102b4e7ba5be`)
+      const response = await api.get(`/users/${id}`)
       return response.data
   } catch (error) {
       throw error
@@ -42,5 +42,15 @@ export const deleteUser = async id => {
       return response.data
   } catch (error) {
       throw error
+  }
+}
+
+export const signIn = async(credential) => {
+  try {
+    const response = await api.post(`/signin`, credential)
+    console.log(response)
+    return response.data
+  } catch (error) {
+    throw error
   }
 }
