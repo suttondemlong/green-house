@@ -30,7 +30,7 @@ function Articles(props) {
   return (
     <Layout>
       <Link to="/add-article" className="add-article">
-      <button className="seemore-button">
+      <button className="basic-button">
             Add Article
         </button>
         </Link>

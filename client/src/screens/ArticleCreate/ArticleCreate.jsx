@@ -30,13 +30,6 @@ function ArticleCreate(props) {
     return <Redirect to={"/articles"} />
     }
   
-  // const createAlert = () => {
-  //   alert('Thank you for submitting to the GreenHouse community!')
-  //   if (window.comfirm) {
-  //     window.location = '/articles'
-  //   }  
-  // }
-  
   return (
     <Layout>
       <form className="create-form" onSubmit={handleSumbit}>
@@ -75,7 +68,7 @@ function ArticleCreate(props) {
           required
           onChange={handleChange}
         />
-        <button type="submit" className="create-submit-button" onClick='createAlert()'>
+        <button type="submit" className="basic-button" onClick='createAlert()'>
           Submit
         </button>
       </form>
