@@ -40,9 +40,7 @@ const ArticleDetail = (props) => {
           <div className="detail-content">{article.content}</div>
           <div className="detail-author">By: {article.author}</div>
           <div className="detail-container">
-            <button className="basic-button" id="edit-button">
-              <Link className="edit-link" to={`/articles/${article._id}/edit`}>Edit</Link>
-            </button>
+          <Link className="edit-link" to={`/articles/${article._id}/edit`}><button className="basic-button" id="edit-button">Edit</button></Link>
             <button className="basic-button" id="edit-button" onClick={handleDelete}>Delete</button>
           </div>
         </div>

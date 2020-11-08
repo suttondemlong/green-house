@@ -31,21 +31,6 @@
   width: 100%;
 }
 
-.seemore-button {
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #42593e;
-  border: 0;
-  width: 200px;
-  height: 40px;
-  -webkit-appearance: none;
-  margin: 30px auto;
-}
-
-.seemore-button:hover {
-  color: #ff5c00;
-}
-
 @media screen and (max-width: 500px) {
   .wishlist > h2 {
     text-align: center;
