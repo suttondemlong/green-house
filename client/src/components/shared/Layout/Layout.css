@@ -5,5 +5,12 @@
 }
 
 .layout-children {
-  margin: 0 7%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .layout-children {
+    max-width: 1030px;
+  }
 }
