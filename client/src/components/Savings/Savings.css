@@ -12,7 +12,7 @@
 .savings-items-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: top;
 }
 .savings-icon {
@@ -27,12 +27,17 @@
 }
 .money-saved-integer {
   font-size: large;
+  text-align: center;
 }
 
 #gauge-title {
   color: #42593e;
   font-weight: 550;
   margin-bottom: 15px;
+}
+
+.gauge-chart1 {
+  width: 100%;
 }
 
 .inner-titles {
@@ -47,6 +52,11 @@
   width: 12vw;
   margin: 0 2vw;
   text-align: right;
+}
+
+.middle-column {
+  height: 100%;
+  justify-content: space-between;
 }
 
 .savings-stats {
@@ -88,5 +98,14 @@
   }
   .savings-icon {
     width: 7vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #view-details-button {
+    margin: 20px auto;
+  }
+  .savings-overall-container {
+    max-width: 710px;
   }
 }

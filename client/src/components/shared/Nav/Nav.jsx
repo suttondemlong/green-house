@@ -7,6 +7,7 @@ import login from '../../../../src/assets/login3.png';
 function Nav(props) {
   return (
     <div className="nav-bar">
+      <div className="nav-contents">
       <Link to='/' style={{textDecoration: 'none', color: '#ffffff'}}>
       <p className="app-name">GreenHouse</p>
       </Link>
@@ -24,6 +25,7 @@ function Nav(props) {
       <Link className="login-icon-link" to='/signin'>
       <img className="login-icon" src={login} alt="login-icon" />
       </Link>
+      </div>
       </div>
     </div>
   );

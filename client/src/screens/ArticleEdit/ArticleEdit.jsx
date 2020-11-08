@@ -92,7 +92,7 @@ const ArticleEdit = (props) => {
                 required
                 onChange={handleChange}
               />
-            <button type='submit' className="article-save-button">Save</button>
+            <button type='submit' className="basic-button">Save</button>
           </form>
         </div>
       </div>

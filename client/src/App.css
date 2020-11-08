@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"); /* logo */
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap"); /* header */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap"); /* paragraph */
-/* move fonts to an assets folder? */
 
 .App {
   text-align: center;
@@ -19,13 +18,14 @@
   background-color: #42593e;
   border: 0;
   width: 200px;
-  height: 40px;
+  height: 30px;
   -webkit-appearance: none;
+  cursor: pointer;
   margin: 30px auto;
 }
 
 .basic-button:hover {
-  color: #ff5c00;
+  background-color: #ff5c00;
 }
 
 @media screen and (max-width: 500px) {

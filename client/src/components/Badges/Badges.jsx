@@ -4,11 +4,14 @@ import './Badges.css';
 
 function Badges(props) {
   return (
-    <div className="badges-container">
+    <div className="badges-overall-container">
       <h2 className="badges-title">Badges</h2>
-      <img className="badge-image" src={badges} alt="" />
-      <button className="basic-button" id="badges-button">See All</button>
+      <div className="badges-container">
+        <img className="badge-image" src={badges} alt="" />
+        <button className="basic-button" id="badges-button">See All</button>
+      </div>
     </div>
+    
   );
 }
 

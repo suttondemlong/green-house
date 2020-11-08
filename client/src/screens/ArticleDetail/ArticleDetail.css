@@ -31,28 +31,18 @@
   padding: 0 0.5vw;
 }
 
-.edit-button,
-.delete-button {
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #42593e;
-  border: 0;
-  width: 200px;
-  height: 40px;
-  -webkit-appearance: none;
-  margin: 30px auto;
-}
-
-.edit-button:hover,
-.delete-button:hover {
-  background-color: #ff5c00;
+#edit-button,
+#delete-button {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .edit-link,
 .delete-link {
   color: white;
   text-decoration: none;
-  padding: 2vw;
+  width: 150px;
+  height: 30px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -83,8 +73,7 @@
     margin-left: -13vw;
   }
 
-  .edit-button,
-  .delete-button {
+  /* .basic-button {
     font-size: 2vw;
     color: #ffffff;
     background-color: #42593e;
@@ -95,6 +84,15 @@
     margin: 10vw auto;
     margin-top: 10vh;
     justify-content: center;
+  } */
+
+  .detail-container {
+    margin-top: 10px;
+  }
+
+  #edit-button,
+  #delete-button {
+    margin: 7px auto;
   }
 
   .detail-title {
