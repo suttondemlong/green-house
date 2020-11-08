@@ -3,6 +3,16 @@
   background-color: #42593e;
   height: 15vw;
   width: 100vw;
+}
+
+.nav-contents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
   color: white;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +35,7 @@
 
 .search {
   display: flex;
-  -webkit-flex-direction: row;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   width: 25%;
@@ -70,6 +80,11 @@
     width: 100%;
   }
 
+  .nav-contents {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
   .app-name {
     font-size: smaller;
     margin-right: 3vw;
@@ -100,5 +115,11 @@
 
   .login-icon-link {
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-contents {
+    max-width: 1200;
   }
 }
