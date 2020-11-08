@@ -120,6 +120,12 @@
 
 @media screen and (min-width: 1024px) {
   .nav-contents {
-    max-width: 1200;
+    max-width: 1200px;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+  .login-icon {
+    height: 70px;
+    width: 70px;
   }
 }
