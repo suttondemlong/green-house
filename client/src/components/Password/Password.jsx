@@ -9,14 +9,16 @@ function Password(props) {
   const [password, setPassword] = useState({
     password: ''
   })
-  const [passwordConfirm, setPasswordConfirm] = useState('')
+  const [passwordConfirm, setPasswordConfirm] = useState({
+    password: ''
+  })
   const [message, setMessage] = useState('')
 
 
   useEffect(() => {
-    if (((password === '') && (passwordConfirm === ''))) {
+    if (((password.password === '') && (passwordConfirm.password === ''))) {
       setMessage('No input detected')
-    } else if (password === passwordConfirm) {
+    } else if (password.password == passwordConfirm.password) {
       setMessage('Successfully created password')
     } else {
       setMessage('Invalid password : Inputs do not match')
@@ -25,13 +27,17 @@ function Password(props) {
 
   const [isUpdated, setUpdated] = useState(false)
 
-  const onChange = (event)=> {
-    setPassword(event.target.value)
-  }
   const handleChange = (event) => {
     const { name, value } = event.target;
     setPassword({
       ...password,
+      [name]: value,
+    })
+  }
+  const handleChange2 = (event) => {
+    const { name, value } = event.target;
+    setPasswordConfirm({
+      ...passwordConfirm,
       [name]: value,
     })
   }
@@ -51,10 +57,20 @@ function Password(props) {
       <h2 className="password-title">CHANGE PASSWORD</h2>
         <div className="password-container">
           <form className="user-form" onSubmit={handleSubmit}>
-          <div className="user-form-inputs"><label htmlFor="password" className="new-password">New Password</label>
-            <input type="password" className="password-input" name="password" value={password.password} onInput={onChange} onChange={handleChange}></input>
-          <label className="confirm-new-password">Confirm New Password</label>
-          <input type="password" className="confirm-password-input" value={passwordConfirm} onChange={(e)=> setPasswordConfirm(e.target.value)}></input>
+          <div className="user-form-inputs">
+            <label htmlFor="password" className="new-password">New Password</label>
+            <input
+              type="password"
+              className="password-input"
+              name="password" value={password.password}
+              onChange={handleChange}></input>
+          <label htmlFor="password" className="confirm-new-password">Confirm New Password</label>
+            <input
+              type="password"
+              className="confirm-password-input"
+              name="password"
+              value={passwordConfirm.password}
+              onChange={handleChange2}></input>
           </div>
             <p className="validation">{message}</p>
           <button className="basic-button">Save Changes</button>

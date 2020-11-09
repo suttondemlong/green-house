@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import {Route, Switch} from 'react-router-dom'
 import './App.css';
-import {getUser} from "../src/services/users"
 import Home from "./screens/Home/Home";
 import Articles from "./screens/Articles/Articles"
 import ArticleCreate from "./screens/ArticleCreate/ArticleCreate";
@@ -15,20 +14,11 @@ import Equipments from "./screens/Equipments/Equipments";
 import SimilarItems from "./screens/SimilarItems/SimilarItems"
 import UserSignUp from "./screens/UserSignUp/UserSignUp"
 import Login from "./screens/Login/Login"
-import { LoginUserProvider } from "./components/LoginUser/LoginUserContext"
-import EditImage from "./screens/EditImage/EditImage"
+import {LoginUserProvider} from "./components/LoginUser/LoginUserContext"
+import EditUserInfo from "./screens/EditUserInfo/EditUserInfo";
 
 function App() {
-  // const [currentUser, setCurrentUser] = useState()
 
-  // useEffect(() => {
-  //   const fetchUser = async () => {
-  //     const currentUser = await getUser()
-  //     setCurrentUser(currentUser)
-  //   }
-  //   fetchUser()
-  // }, [])
-    
   return (
     <LoginUserProvider>
     <div className="App">
@@ -46,7 +36,7 @@ function App() {
         <Route exact path='/similaritems' component={SimilarItems} />
         <Route exact path='/signup' component={UserSignUp} />
         <Route exact path='/signin' component={Login} />
-        <Route exact path='/editimage' component={EditImage} />
+        <Route exact path='/edituserinfo' component={EditUserInfo} /> 
       </Switch>
     </div>
     </LoginUserProvider>

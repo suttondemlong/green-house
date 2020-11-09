@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Link, Redirect} from 'react-router-dom'
 import "./LoginForm.css"
 import { LoginUserContext } from "../LoginUser/LoginUserContext"
@@ -20,10 +20,11 @@ function LoginForm(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(userInfo)
     try {
       let user = await signIn(userInfo)
       setCurrentUser(user)
+      let localUser = JSON.stringify(user)
+      localStorage.setItem('localUser', localUser)
     } catch(error) {
       throw error
     }
@@ -44,7 +45,7 @@ function LoginForm(props) {
         <input onChange={handleChange} value={userInfo.email} type='text' className="login-email" placeholder='Enter Email' name='email' />
         <label className="sign-l-name" htmlFor="password">Password</label>
         <input onChange={handleChange} value={userInfo.password} type='password' className='login-password' placeholder='Enter Password' name='password' />
-        <button className="basic-button" type='submit'>Submit</button>
+        <button className="basic-button" type='submit'>Login</button>
         </form>
     </div>
   );

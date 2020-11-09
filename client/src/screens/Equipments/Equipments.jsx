@@ -31,10 +31,10 @@ function Equipments(props) {
       case "name-descending":
         setQueriedEquipments(ZA(queriedEquipments))
         break
-      case "price-ascending":
+      case "savings-ascending":
         setQueriedEquipments(lowestFirst(queriedEquipments))
         break
-      case "price-descending":
+      case "savings-descending":
         setQueriedEquipments(highestFirst(queriedEquipments))
         break
       default:

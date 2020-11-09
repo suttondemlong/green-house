@@ -1,7 +1,7 @@
 .nav-bar {
   display: -webkit-flex;
   background-color: #42593e;
-  height: 15vw;
+  height: 10vw;
   width: 100vw;
 }
 
@@ -119,9 +119,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .nav-bar {
+    height: 105px;
+  }
   .nav-contents {
     max-width: 1200px;
-    font-size: 50px;
+    font-size: 45px;
     margin: 0 auto;
   }
   .login-icon {
