@@ -5,13 +5,11 @@ import { Redirect} from 'react-router-dom'
 
 function EditImageComp(props) {
   const [currentUser] = useContext(LoginUserContext)
-  const [isUpdated, setUpdated] = useState(false)
-  const [user, setUser] = useState(currentUser)
-  const [imgURL, setImgURL] = useState()
+  const [user, setUser] = useState({
+    imgURL: currentUser.imgURL
+  })
 
-  const onChange = (event) => {
-    setImgURL(event.target.value)
-  }
+  const [isUpdated, setUpdated] = useState(false)
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -23,10 +21,9 @@ function EditImageComp(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    const updated = await updateUser(currentUser._id, imgURL)
+    const updated = await updateUser(currentUser._id, user)
     setUpdated(updated)
   }
-  console.log(imgURL)
 
   if (isUpdated) {
     return <Redirect to={`/MyAccount`} />
@@ -55,22 +52,3 @@ function EditImageComp(props) {
 }
 
 export default EditImageComp;
-
-
-// const onChange = (event) => {
-//   setImage(event.target.value)
-// }
-
-// const handleChange = (event) => {
-//   const { imgURL, value } = event.target;
-//   setImage({
-//     ...image,
-//     [imgURL]: value,
-//   })
-// }
-
-// const handleSubmit = async (event) => {
-//   event.preventDefault()
-//   const updated = await updateUser(currentUser._id, imgURL)
-//   setUpdated(updated)
-// }
