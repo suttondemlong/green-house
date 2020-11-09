@@ -3,6 +3,7 @@ import {Link, Redirect} from 'react-router-dom'
 import "./LoginForm.css"
 import { LoginUserContext } from "../LoginUser/LoginUserContext"
 import { signIn } from "../../services/users"
+import ls from 'local-storage'
 
 function LoginForm(props) {
   const [currentUser, setCurrentUser] = useContext(LoginUserContext)
@@ -20,7 +21,9 @@ function LoginForm(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(userInfo)
+    localStorage.setItem('currentUser', currentUser)
+    console.log(localStorage.getItem('currentUser'))
+    // console.log(userInfo)
     try {
       let user = await signIn(userInfo)
       setCurrentUser(user)

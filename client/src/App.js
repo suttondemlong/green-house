@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React /*{useEffect}*/ from "react"
 import {Route, Switch} from 'react-router-dom'
 import './App.css';
-import {getUser} from "../src/services/users"
+// import {getUser} from "../src/services/users"
 import Home from "./screens/Home/Home";
 import Articles from "./screens/Articles/Articles"
 import ArticleCreate from "./screens/ArticleCreate/ArticleCreate";
