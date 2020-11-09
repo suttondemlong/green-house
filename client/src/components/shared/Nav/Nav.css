@@ -1,7 +1,7 @@
 .nav-bar {
   display: -webkit-flex;
   background-color: #42593e;
-  height: 12vw;
+  height: 10vw;
   width: 100vw;
 }
 
@@ -120,7 +120,7 @@
 
 @media screen and (min-width: 1200px) {
   .nav-bar {
-    height: 140px;
+    height: 105px;
   }
   .nav-contents {
     max-width: 1200px;
