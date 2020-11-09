@@ -1,0 +1,25 @@
+.edit-imgURL {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 15vw;
+  margin: 0 auto;
+}
+
+.edit-imgURL > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.edit-imgURL-input::placeholder {
+  color: grey;
+}
+
+#edit-save-button {
+  width: 15vw;
+}
