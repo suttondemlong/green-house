@@ -1,23 +1,28 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import "./UserInformation.css"
-
+import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 
 
 function UserInformation(props) {
+  const [currentUser] = useContext(LoginUserContext)
   return (
     <div className="userinformation">
       <div className="user-left-div">
-        {props.currentUser && <img className='userinfo-image' src={props.currentUser.imgURL} alt='User' />}
-        <p className='user-change'>Change Photo</p>
+        <div className="user-info-mask">
+        <img className='userinfo-image' src={currentUser.imgURL} alt='User' />
+        </div>
+          <p className='user-change'>Change Photo</p>
       </div>
       <div className="user-right-div">
-      <p className='user-friends'>32 Friends</p> 
+        <p className='user-friends'>32 Friends</p> 
+        <div className="user-button-container">
       <button className="user-view-button" disabled>
         View Friends
         </button>
         <button className="user-add-button" disabled>
-          Add Friends
+            Add Friends
         </button>
+        </div>
         </div>
     </div>
   );

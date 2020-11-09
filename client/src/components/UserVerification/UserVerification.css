@@ -1,51 +1,49 @@
 .verified-container {
   display: flex;
+  width: 87%;
   flex-direction: column;
-  
+  margin: 0 auto;
 }
 
 .verified-title {
   font-weight: 800;
+  margin-bottom: 20px;
 }
 
 .verified-name {
   display: flex;
-  margin-left: 5%;
-  
+  margin-top: 20px;
 }
 
 .verified-email {
   display: flex;
-  margin-left: 5%;
-  margin-top: 2%;
-  
-  
 }
 
 .verified-password {
   display: flex;
-  margin-left: 5%;
-  margin-top: 2%;
 }
 
 .verified-content {
   display: flex;
-  margin: 0 auto;
-  padding-right: 70px;
+  justify-content: center;
+  padding-left: 30%;
 }
-
+#account-name {
+  margin-left: 33px;
+}
+#account-email {
+  margin-left: 36px;
+}
 .verification-edit {
   display: flex;
   text-decoration: underline;
-  color: #FF5C00;
+  color: #ff5c00;
   justify-content: flex-end;
   margin-right: 5%;
 }
 
 @media screen and (max-width: 500px) {
   .verified-content {
-    display: flex;
-    margin: 0 auto;
-    padding-right: 0px;
+    padding-left: 15%;
   }
 }
