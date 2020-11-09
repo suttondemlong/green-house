@@ -25,14 +25,14 @@
 
 .verified-content {
   display: flex;
-  width: 100%;
   justify-content: center;
+  padding-left: 30%;
 }
 #account-name {
-  margin-left: 32px;
+  margin-left: 33px;
 }
 #account-email {
-  margin-left: 37px;
+  margin-left: 36px;
 }
 .verification-edit {
   display: flex;
@@ -43,4 +43,7 @@
 }
 
 @media screen and (max-width: 500px) {
+  .verified-content {
+    padding-left: 15%;
+  }
 }
