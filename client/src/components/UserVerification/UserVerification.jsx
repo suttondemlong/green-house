@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import './UserVerification.css'
 import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
+import { Link } from "react-router-dom";
 
 function UserVerification(props) {
   const [currentUser]= useContext(LoginUserContext);
@@ -22,7 +23,7 @@ function UserVerification(props) {
           <div className="verified-content">{currentUser.password}</div>
         </div>
       </div>
-      <div className='verification-edit'>edit</div>
+      <div className='verification-edit'><Link to='/edituserinfo'>edit</Link></div>
       <hr className="general-hr"></hr>
     </div>
   );
