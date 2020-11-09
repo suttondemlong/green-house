@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react';
-import {Link} from "react-router-dom"
 import "./UserInformation.css"
 import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 import EditImageComp from '../EditImageComp/EditImageComp';

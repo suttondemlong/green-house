@@ -18,7 +18,7 @@ function Password(props) {
   useEffect(() => {
     if (((password.password === '') && (passwordConfirm.password === ''))) {
       setMessage('No input detected')
-    } else if (password.password == passwordConfirm.password) {
+    } else if (password.password === passwordConfirm.password) {
       setMessage('Successfully created password')
     } else {
       setMessage('Invalid password : Inputs do not match')
