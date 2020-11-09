@@ -18,7 +18,7 @@ function Password(props) {
   useEffect(() => {
     if (((password.password === '') && (passwordConfirm.password === ''))) {
       setMessage('No input detected')
-    } else if (password.password == passwordConfirm.password) {
+    } else if (password.password === passwordConfirm.password) {
       setMessage('Successfully created password')
     } else {
       setMessage('Invalid password : Inputs do not match')
@@ -47,7 +47,7 @@ function Password(props) {
     const updated = await updateUser(currentUser._id, password )
     setUpdated(updated)
   }
-  console.log(password)
+
   if (isUpdated) {
     return <Redirect to={`/MyAccount`} />
   }
