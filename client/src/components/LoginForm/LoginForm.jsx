@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Link, Redirect} from 'react-router-dom'
 import "./LoginForm.css"
 import { LoginUserContext } from "../LoginUser/LoginUserContext"
@@ -20,10 +20,11 @@ function LoginForm(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(userInfo)
     try {
       let user = await signIn(userInfo)
       setCurrentUser(user)
+      let localUser = JSON.stringify(user)
+      localStorage.setItem('localUser', localUser)
     } catch(error) {
       throw error
     }

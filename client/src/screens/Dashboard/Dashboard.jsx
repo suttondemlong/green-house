@@ -10,7 +10,7 @@ import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 
 function Dashboard(props) {
   const [currentUser] = useContext(LoginUserContext)
-  console.log(currentUser)
+  // console.log(currentUser)
   return (
     <Layout>
       <div className="content-container">

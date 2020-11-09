@@ -16,8 +16,6 @@ const EditUserInfo = (props) => {
 
   const [isUpdated, setUpdated] = useState(false)
 
-
-
   const handleChange = (event) => {
     const { name, value } = event.target
     setUser({
@@ -29,7 +27,9 @@ const EditUserInfo = (props) => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const updated = await updateUser(currentUser._id, user)
-    setUpdated(updated)
+    let localUser = JSON.stringify(updated)
+    localStorage.setItem('localUser', localUser)
+    setUpdated(true)
   }
 
   if (isUpdated) {

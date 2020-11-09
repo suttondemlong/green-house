@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import {Route, Switch} from 'react-router-dom'
 import './App.css';
-import {getUser} from "../src/services/users"
 import Home from "./screens/Home/Home";
 import Articles from "./screens/Articles/Articles"
 import ArticleCreate from "./screens/ArticleCreate/ArticleCreate";
@@ -19,7 +18,7 @@ import {LoginUserProvider} from "./components/LoginUser/LoginUserContext"
 import EditUserInfo from "./screens/EditUserInfo/EditUserInfo";
 
 function App() {
-    
+
   return (
     <LoginUserProvider>
     <div className="App">

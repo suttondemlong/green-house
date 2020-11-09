@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 const LoginUserContext = React.createContext([{}, () => {}])
 
 function LoginUserProvider(props) {
   const [currentUser, setCurrentUser] = useState({})
+  
+  useEffect(() => {
+    let user = localStorage.getItem('localUser')
+    user ? setCurrentUser(JSON.parse(user)) : setCurrentUser(null)
+  }, ['localUser']);
+
   return (
     <LoginUserContext.Provider value={[currentUser, setCurrentUser]}>
       {props.children}
