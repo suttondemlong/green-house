@@ -81,3 +81,9 @@
     font-size: 11px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .image-text {
+    font-size: 29px;
+  }
+}
