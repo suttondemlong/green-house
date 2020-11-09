@@ -47,7 +47,7 @@ function Password(props) {
     const updated = await updateUser(currentUser._id, password )
     setUpdated(updated)
   }
-  console.log(password)
+
   if (isUpdated) {
     return <Redirect to={`/MyAccount`} />
   }
