@@ -16,17 +16,9 @@ import SimilarItems from "./screens/SimilarItems/SimilarItems"
 import UserSignUp from "./screens/UserSignUp/UserSignUp"
 import Login from "./screens/Login/Login"
 import {LoginUserProvider} from "./components/LoginUser/LoginUserContext"
+import EditUserInfo from "./screens/EditUserInfo/EditUserInfo";
 
 function App() {
-  // const [currentUser, setCurrentUser] = useState()
-
-  // useEffect(() => {
-  //   const fetchUser = async () => {
-  //     const currentUser = await getUser()
-  //     setCurrentUser(currentUser)
-  //   }
-  //   fetchUser()
-  // }, [])
     
   return (
     <LoginUserProvider>
@@ -45,6 +37,7 @@ function App() {
         <Route exact path='/similaritems' component={SimilarItems} />
         <Route exact path='/signup' component={UserSignUp} />
         <Route exact path='/signin' component={Login} />
+        <Route exact path='/edituserinfo' component={EditUserInfo} /> 
       </Switch>
     </div>
     </LoginUserProvider>
