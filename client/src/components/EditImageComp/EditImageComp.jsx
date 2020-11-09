@@ -41,10 +41,10 @@ function EditImageComp(props) {
             type="text"
             name="imgURL"
             placeholder="New image URL"
-            autoFocus
+            // autoFocus
             required
             onChange={handleChange} />
-            <button className="basic-button">Save Changes</button>
+            <button id="edit-save-button" className="basic-button">Save Changes</button>
         </form>
   );
 }

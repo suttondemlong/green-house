@@ -19,3 +19,7 @@
 .edit-imgURL-input::placeholder {
   color: grey;
 }
+
+#edit-save-button {
+  width: 15vw;
+}

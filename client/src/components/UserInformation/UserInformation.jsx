@@ -20,8 +20,8 @@ function UserInformation(props) {
         <div className="user-info-mask">
         <img className='userinfo-image' src={currentUser.imgURL} alt='User' />
         </div>
-        <p className='user-change' onClick={handleClick}>Change Photo</p>
-        {<EditImageComp style={{ display: (toggle===false) ? "none" : "flex"}} />}
+        <button className='user-change' onClick={handleClick}>Change Photo</button>
+        {(toggle === false) ? <EditImageComp /> : <EditImageComp style={{display: "none"}} />}
       </div>
       <div className="user-right-div">
         <p className='user-friends'>32 Friends</p> 
