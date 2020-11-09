@@ -44,7 +44,7 @@ function LoginForm(props) {
         <input onChange={handleChange} value={userInfo.email} type='text' className="login-email" placeholder='Enter Email' name='email' />
         <label className="sign-l-name" htmlFor="password">Password</label>
         <input onChange={handleChange} value={userInfo.password} type='password' className='login-password' placeholder='Enter Password' name='password' />
-        <button className="basic-button" type='submit'>Submit</button>
+        <button className="basic-button" type='submit'>Login</button>
         </form>
     </div>
   );
