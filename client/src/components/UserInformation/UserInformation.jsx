@@ -9,8 +9,8 @@ function UserInformation(props) {
   const [currentUser] = useContext(LoginUserContext)
   const [toggle, setToggle] = useState(false)
 
-  const handleClick = (e) => {
-    setToggle(false)
+  const handleClick = () => {
+    setToggle(true)
   }
 
   return (
@@ -19,8 +19,8 @@ function UserInformation(props) {
         <div className="user-info-mask">
         <img className='userinfo-image' src={currentUser.imgURL} alt='User' />
         </div>
-        <button className='user-change' onClick={handleClick}>Change Photo</button>
-        {(toggle === true) ? null : <EditImageComp style={{display: "none"}} />}
+        <button className='basic-button' onClick={handleClick}>Change Photo</button>
+        {(toggle === false) ? null : <EditImageComp />}
       </div>
       <div className="user-right-div">
         <p className='user-friends'>32 Friends</p> 
