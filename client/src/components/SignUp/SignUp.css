@@ -1,34 +1,53 @@
 .signup-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+.signup-form > input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.signup-form > label {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
 }
 .sign-i-name::placeholder {
   color: black;
+  font-size: 12px;
 }
 .sign-l-name {
   text-align: left;
+  width: 100%;
 }
 .sign-i-socialmedia::placeholder {
   color: black;
+  font-size: 12px;
 }
 .sign-l-socialmedia {
   text-align: left;
 }
 .sign-i-imgURL::placeholder {
   color: black;
+  font-size: 12px;
 }
 .sign-l-imgURL {
   text-align: left;
 }
 .sign-i-email::placeholder {
   color: black;
+  font-size: 12px;
 }
 .sign-l-email {
   text-align: left;
 }
 .sign-i-password::placeholder {
   color: black;
+  font-size: 12px;
 }
 .sign-l-password {
   text-align: left;

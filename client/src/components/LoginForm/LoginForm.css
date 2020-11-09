@@ -1,5 +1,19 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.login-form > input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.login-form > label {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
 }
