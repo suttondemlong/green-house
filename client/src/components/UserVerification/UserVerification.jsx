@@ -11,11 +11,11 @@ function UserVerification(props) {
       <div className="verified-container">
         <div className='verified-name'>
         <div className="verified-title">Name</div>
-          <div className="verified-content">{currentUser.name}</div>
+          <div id="account-name" className="verified-content">{currentUser.name}</div>
         </div>
         <div className='verified-email'>
         <div className="verified-title">Email</div>
-          <div className="verified-content">{currentUser.email}</div>
+          <div id="account-email" className="verified-content">{currentUser.email}</div>
         </div>
         <div className='verified-password'>
         <div className="verified-title">Password</div>
