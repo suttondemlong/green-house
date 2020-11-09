@@ -8,17 +8,21 @@ function UserInformation(props) {
   return (
     <div className="userinformation">
       <div className="user-left-div">
+        <div className="user-info-mask">
         <img className='userinfo-image' src={currentUser.imgURL} alt='User' />
-        <p className='user-change'>Change Photo</p>
+        </div>
+          <p className='user-change'>Change Photo</p>
       </div>
       <div className="user-right-div">
-      <p className='user-friends'>32 Friends</p> 
+        <p className='user-friends'>32 Friends</p> 
+        <div className="user-button-container">
       <button className="user-view-button" disabled>
         View Friends
         </button>
         <button className="user-add-button" disabled>
-          Add Friends
+            Add Friends
         </button>
+        </div>
         </div>
     </div>
   );
