@@ -7,7 +7,7 @@ function LoginUserProvider(props) {
   useEffect(() => {
     let user = localStorage.getItem('localUser')
     user ? setCurrentUser(JSON.parse(user)) : setCurrentUser(null)
-  }, ['localUser']);
+  }, []);
 
   return (
     <LoginUserContext.Provider value={[currentUser, setCurrentUser]}>
