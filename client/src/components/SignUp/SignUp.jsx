@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Redirect, Link } from 'react-router-dom'
 import './SignUp.css'
 import { createUser } from '../../services/users'
-import nodemon from 'nodemon';
 
 function SignUp(props) {
   const [user, setUser] = useState({
