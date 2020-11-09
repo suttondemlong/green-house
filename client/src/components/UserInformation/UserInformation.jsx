@@ -10,8 +10,7 @@ function UserInformation(props) {
   const [toggle, setToggle] = useState(false)
 
   const handleClick = (e) => {
-    e.preventDefault()
-    setToggle(true)
+    setToggle(false)
   }
 
   return (
@@ -21,7 +20,7 @@ function UserInformation(props) {
         <img className='userinfo-image' src={currentUser.imgURL} alt='User' />
         </div>
         <button className='user-change' onClick={handleClick}>Change Photo</button>
-        {(toggle === false) ? <EditImageComp /> : <EditImageComp style={{display: "none"}} />}
+        {(toggle === true) ? null : <EditImageComp style={{display: "none"}} />}
       </div>
       <div className="user-right-div">
         <p className='user-friends'>32 Friends</p> 
