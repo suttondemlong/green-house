@@ -15,7 +15,8 @@ import Equipments from "./screens/Equipments/Equipments";
 import SimilarItems from "./screens/SimilarItems/SimilarItems"
 import UserSignUp from "./screens/UserSignUp/UserSignUp"
 import Login from "./screens/Login/Login"
-import {LoginUserProvider} from "./components/LoginUser/LoginUserContext"
+import { LoginUserProvider } from "./components/LoginUser/LoginUserContext"
+import EditImage from "./screens/EditImage/EditImage"
 
 function App() {
   // const [currentUser, setCurrentUser] = useState()
@@ -45,6 +46,7 @@ function App() {
         <Route exact path='/similaritems' component={SimilarItems} />
         <Route exact path='/signup' component={UserSignUp} />
         <Route exact path='/signin' component={Login} />
+        <Route exact path='/editimage' component={EditImage} />
       </Switch>
     </div>
     </LoginUserProvider>

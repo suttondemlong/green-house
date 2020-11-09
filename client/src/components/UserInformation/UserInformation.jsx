@@ -1,4 +1,5 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
+import {Link} from "react-router-dom"
 import "./UserInformation.css"
 import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 
@@ -11,7 +12,9 @@ function UserInformation(props) {
         <div className="user-info-mask">
         <img className='userinfo-image' src={currentUser.imgURL} alt='User' />
         </div>
+        <Link to='/editimage'>
           <p className='user-change'>Change Photo</p>
+        </Link>
       </div>
       <div className="user-right-div">
         <p className='user-friends'>32 Friends</p> 
