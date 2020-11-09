@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 import './SignUp.css'
 import { createUser } from '../../services/users'
+import nodemon from 'nodemon';
 
 function SignUp(props) {
   const [user, setUser] = useState({
@@ -32,7 +33,12 @@ function SignUp(props) {
 
   return (
     <div>
-      <h2>Already have an account?</h2>
+      <div className="signup-headers">
+        <h2>Sign Up</h2>
+        </div>
+        <Link to='/signin' style={{textDecoration:"none"}}>
+          <p style={{color: "#ff5c00"}}>Already have an account?</p>
+        </Link>
       <div className="signup-form-container">
       <form className="signup-form" onSubmit={handleSumbit}>
         <label className="sign-l-name" htmlFor="name">Name</label>
