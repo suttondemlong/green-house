@@ -26,18 +26,19 @@ function SignUp(props) {
     setCreated({ created })
   }; 
   if (isCreated) {
-    return <Redirect to={"/dashboard"} />
+    return <Redirect to={"/signin"} />
     }
 
 
   return (
     <div>
       <h2>Already have an account?</h2>
+      <div className="signup-form-container">
       <form className="signup-form" onSubmit={handleSumbit}>
         <label className="sign-l-name" htmlFor="name">Name</label>
         <input
           className="sign-i-name"
-          placeholder="Enter Name"
+          placeholder="First Name"
           value={user.name}
           type="text"
           name="name"
@@ -48,7 +49,7 @@ function SignUp(props) {
         <label className="sign-l-email" htmlFor="email">Email</label>
         <input
           className="sign-i-email"
-          placeholder="Enter Email"
+          placeholder="name@example.com"
           value={user.email}
           type="text"
           name="email"
@@ -59,8 +60,9 @@ function SignUp(props) {
         <input
           className="sign-i-password"
           type="password"
-          placeholder="Enter Password"
+          placeholder="minimum of 4 characters"
           value={user.password}
+          minLength= "4"
           name="password"
           required
           onChange={handleChange}/>
@@ -86,7 +88,8 @@ function SignUp(props) {
         <button className="basic-button" type="submit">
         Submit
       </button>
-      </form>
+        </form>
+        </div>
     </div>
   );
 }

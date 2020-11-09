@@ -36,10 +36,10 @@ function LoginForm(props) {
 
   return (
     <div className='Login-container'>
-      <form onSubmit={handleSubmit} className='login-form'>
     <Link to='/signup'>
         <button className="basic-button" type='submit'>Signup</button>
     </Link>
+      <form onSubmit={handleSubmit} className='login-form'>
         <label className="sign-l-name" htmlFor="email">Email</label>
         <input onChange={handleChange} value={userInfo.email} type='text' className="login-email" placeholder='Enter Email' name='email' />
         <label className="sign-l-name" htmlFor="password">Password</label>
