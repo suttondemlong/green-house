@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 import { updateUser } from '../../services/users';
 import { Redirect } from 'react-router-dom'
-import './EditImageComp.css'
+import "./EditImageComp.css"
 
 function EditImageComp(props) {
   const [currentUser] = useContext(LoginUserContext)

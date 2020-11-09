@@ -23,3 +23,8 @@
 #edit-save-button {
   width: 15vw;
 }
+
+@media screen and (max-width: 500px) {
+  
+
+} 
