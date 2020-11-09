@@ -8,7 +8,6 @@ import {deleteUser} from "../../services/users"
 
 function SocialMedia(props) {
   const [currentUser] = useContext(LoginUserContext)
-
   const [isDeleted, setIsDeleted] = useState(false)
 
   if (isDeleted) {
