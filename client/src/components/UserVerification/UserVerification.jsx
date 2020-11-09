@@ -23,7 +23,7 @@ function UserVerification(props) {
           <div className="verified-content">{currentUser.password}</div>
         </div>
       </div>
-      <div className='verification-edit'><Link to='/edituserinfo'>edit</Link></div>
+      <div className='verification-edit'><Link to='/edituserinfo' style={{textDecoration:"none", color:"#ff5c00"}}>edit</Link></div>
       <hr className="general-hr"></hr>
     </div>
   );
