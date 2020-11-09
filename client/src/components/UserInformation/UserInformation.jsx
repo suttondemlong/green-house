@@ -1,20 +1,27 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import {Link} from "react-router-dom"
 import "./UserInformation.css"
 import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
+import EditImageComp from '../EditImageComp/EditImageComp';
 
 
 function UserInformation(props) {
   const [currentUser] = useContext(LoginUserContext)
+  const [toggle, setToggle] = useState(false)
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    setToggle(true)
+  }
+
   return (
     <div className="userinformation">
       <div className="user-left-div">
         <div className="user-info-mask">
         <img className='userinfo-image' src={currentUser.imgURL} alt='User' />
         </div>
-        <Link to='/editimage'>
-          <p className='user-change'>Change Photo</p>
-        </Link>
+        <p className='user-change' onClick={handleClick}>Change Photo</p>
+        {<EditImageComp style={{ display: (toggle===false) ? "none" : "flex"}} />}
       </div>
       <div className="user-right-div">
         <p className='user-friends'>32 Friends</p> 
