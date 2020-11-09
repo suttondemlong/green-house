@@ -76,6 +76,7 @@
 
 #view-details-button {
   margin: 5px auto;
+  height: 30px;
 }
 
 .calculations {
@@ -101,9 +102,11 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   #view-details-button {
-    margin: 20px auto;
+    margin: auto;
+    height: 30px;
+    margin-bottom: 30px;
   }
   .savings-overall-container {
     max-width: 710px;
