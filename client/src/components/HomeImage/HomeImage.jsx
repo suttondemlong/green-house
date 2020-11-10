@@ -10,7 +10,7 @@ function HomeImage(props) {
           <div className="image-text">Join an eco-friendly community.</div>
           <div className="image-text">Reach your goals of sustainability.</div>
           <div className="image-text">GreenHouse will give you the tools and information you need.</div>
-          <Link to='/signup'>
+          <Link to='/signup' style={{textDecoration: 'none', color: "#ffffff"}}>
             <div className="join-button" disabled>Join our Community</div>
           </Link>
         </div>
