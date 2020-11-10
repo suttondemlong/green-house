@@ -1,5 +1,7 @@
 # GreenHouse
 
+[Deployed Site](https://green-house-adirondack-phoenix.netlify.app/)
+
 Team Members:
 
 - Amber Moore
