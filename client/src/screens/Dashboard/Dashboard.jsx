@@ -10,7 +10,7 @@ import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 import { Redirect } from "react-router-dom";
 
 function Dashboard(props) {
-  const [currentUser] = useContext(LoginUserContext)
+  const currentUser = useContext(LoginUserContext)
   const [logOut, setLogOut] = useState(false)
 
   const handleLogOut = (event) => {

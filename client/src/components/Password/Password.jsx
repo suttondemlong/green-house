@@ -1,16 +1,26 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Redirect} from 'react-router-dom'
 import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 import {updateUser} from '../../services/users'
 import "./Password.css";
+import { UpdateUserContext } from '../../components/LoginUser/LoginUserContext';
 
 function Password(props) {
-  const [currentUser] = useContext(LoginUserContext)
+  const currentUser = useContext(LoginUserContext)
+  const updateUserContext = useContext(UpdateUserContext)
+
   const [password, setPassword] = useState({
-    password: ''
+    name: currentUser.name,
+    email: currentUser.email, 
+    password: '',
+    imgURL: currentUser.imgURL,
+    _id: currentUser._id,
   })
   const [passwordConfirm, setPasswordConfirm] = useState({
-    password: ''
+    name: currentUser.name,
+    email: currentUser.email, 
+    password: '',
+    imgURL: currentUser.imgURL,
+    _id: currentUser._id,
   })
   const [message, setMessage] = useState('')
 
@@ -52,12 +62,12 @@ function Password(props) {
       const updated = await updateUser(currentUser._id, password )
       let localUser = JSON.stringify(updated)
       localStorage.setItem('localUser', localUser)
-      window.location.reload()
+      updateUserContext(password)
     } else {
       setMessage("Unable to process change: Make sure inputs match")
     }
   }
-
+  
   return (
     <div>
       <h2 className="password-title">CHANGE PASSWORD</h2>
