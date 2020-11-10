@@ -23,7 +23,10 @@ function EditImageComp(props) {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const updated = await updateUser(currentUser._id, user)
-    setUpdated(updated)
+    let localUser = JSON.stringify(updated)
+    localStorage.setItem('localUser', localUser)
+    setUpdated(true)
+    window.location.reload()
   }
 
   if (isUpdated) {

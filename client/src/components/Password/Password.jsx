@@ -17,11 +17,19 @@ function Password(props) {
 
   useEffect(() => {
     if (((password.password === '') && (passwordConfirm.password === ''))) {
+      setMessage()
+    } else if (password.password == passwordConfirm.password) {
+      setMessage('Passwords matched!')
+    } else if (password.password === '') {
+      setMessage('Please enter new password')
+    } else if (passwordConfirm.password === '') {
+      setMessage('Please enter confirmed password')
+
       setMessage('No input detected')
     } else if (password.password === passwordConfirm.password) {
       setMessage('Successfully created password')
     } else {
-      setMessage('Invalid password : Inputs do not match')
+      setMessage('Invalid password: Inputs do not match')
     }
   }, [password, passwordConfirm])
 
@@ -44,6 +52,15 @@ function Password(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
+    if (password.password === passwordConfirm.password) {
+      const updated = await updateUser(currentUser._id, password )
+      let localUser = JSON.stringify(updated)
+      localStorage.setItem('localUser', localUser)
+      setUpdated(true)
+      window.location.reload()
+    } else {
+      setMessage("Unable to process change: Make sure inputs match")
+    }
     const updated = await updateUser(currentUser._id, password )
     setUpdated(updated)
   }

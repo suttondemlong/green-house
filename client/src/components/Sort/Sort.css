@@ -1,8 +1,8 @@
 .sort-container {
   display: flex;
-  width: 80vw;
   justify-content: flex-end;
   margin: 20px;
+  padding-right: 75px;
 }
 
 .label-sort {
@@ -28,5 +28,6 @@
       width: 100%;
       justify-content: center;
       margin: 20px;
+      padding-right: 0px;
   }
 }
