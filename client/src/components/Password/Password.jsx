@@ -48,12 +48,15 @@ function Password(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    const updated = await updateUser(currentUser._id, password )
-    let localUser = JSON.stringify(updated)
-    localStorage.setItem('localUser', localUser)
-    setUpdated(true)
-    window.location.reload()
-  }
+    if (password.password === passwordConfirm.password) {
+      const updated = await updateUser(currentUser._id, password )
+      let localUser = JSON.stringify(updated)
+      localStorage.setItem('localUser', localUser)
+      setUpdated(true)
+      window.location.reload()
+    } else {
+      setMessage("Unable to process change: Make sure inputs match")
+    }
 
   if (isUpdated) {
     return <Redirect to={`/MyAccount`} />
