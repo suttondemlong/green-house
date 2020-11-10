@@ -2,3 +2,14 @@
   text-align: left;
   padding-left: 4%;
 }
+
+.tag-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#log-out-button {
+  margin-right: 4%;
+}
