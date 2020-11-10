@@ -3,11 +3,17 @@ import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 import { updateUser } from '../../services/users';
 import { Redirect } from 'react-router-dom'
 import "./EditImageComp.css"
+import { UpdateUserContext } from '../../components/LoginUser/LoginUserContext'
 
 function EditImageComp(props) {
-  const [currentUser] = useContext(LoginUserContext)
+  const currentUser = useContext(LoginUserContext)
+  const updateUserContext = useContext(UpdateUserContext)
   const [user, setUser] = useState({
-    imgURL: currentUser.imgURL
+    name: currentUser.name,
+    email: currentUser.email, 
+    password: currentUser.password,
+    imgURL: currentUser.imgURL,
+    _id: currentUser._id,
   })
 
   const [isUpdated, setUpdated] = useState(false)
@@ -25,8 +31,8 @@ function EditImageComp(props) {
     const updated = await updateUser(currentUser._id, user)
     let localUser = JSON.stringify(updated)
     localStorage.setItem('localUser', localUser)
+    updateUserContext(user)
     setUpdated(true)
-    window.location.reload()
   }
 
   if (isUpdated) {

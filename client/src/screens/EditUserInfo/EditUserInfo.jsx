@@ -3,15 +3,18 @@ import './EditUserInfo.css';
 import { Redirect } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';
 import { updateUser } from '../../services/users';
-import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
+import { LoginUserContext, UpdateUserContext } from "../../components/LoginUser/LoginUserContext"
 
 const EditUserInfo = (props) => {
-  const [currentUser] = useContext(LoginUserContext);
+  const currentUser = useContext(LoginUserContext);
+  const updateUserContext = useContext(UpdateUserContext)
 
   const [user, setUser] = useState({
     name: currentUser.name,
     email: currentUser.email, 
-    password: currentUser.password
+    password: currentUser.password,
+    imgURL: currentUser.imgURL,
+    _id: currentUser._id,
   })
 
   const [isUpdated, setUpdated] = useState(false)
@@ -29,8 +32,8 @@ const EditUserInfo = (props) => {
     const updated = await updateUser(currentUser._id, user)
     let localUser = JSON.stringify(updated)
     localStorage.setItem('localUser', localUser)
+    updateUserContext(user)
     setUpdated(true)
-    window.location.reload()
   }
 
   if (isUpdated) {

@@ -1,9 +1,11 @@
-import React, { useState} from 'react';
+import React, { useState, useContext} from 'react';
 import {Link, Redirect} from 'react-router-dom'
 import "./LoginForm.css"
 import { signIn } from "../../services/users"
+import { UpdateUserContext } from '../../components/LoginUser/LoginUserContext'
 
 function LoginForm(props) {
+  const updateUser = useContext(UpdateUserContext)
   const [userInfo, setUserInfo] = useState({ email: "", password: "" })
 
   const [isLoggedIn, setLoggedIn] = useState(false)
@@ -22,6 +24,7 @@ function LoginForm(props) {
       let user = await signIn(userInfo)
       let localUser = JSON.stringify(user)
       localStorage.setItem('localUser', localUser)
+      updateUser(user)
     } catch(error) {
       throw error
     }
