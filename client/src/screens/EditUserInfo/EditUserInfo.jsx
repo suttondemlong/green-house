@@ -30,6 +30,7 @@ const EditUserInfo = (props) => {
     let localUser = JSON.stringify(updated)
     localStorage.setItem('localUser', localUser)
     setUpdated(true)
+    window.location.reload()
   }
 
   if (isUpdated) {
