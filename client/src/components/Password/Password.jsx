@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Redirect} from 'react-router-dom'
 import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 import {updateUser} from '../../services/users'
 import "./Password.css";
