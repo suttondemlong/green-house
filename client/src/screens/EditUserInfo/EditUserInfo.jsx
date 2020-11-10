@@ -6,27 +6,21 @@ import { updateUser } from '../../services/users';
 import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 
 const EditUserInfo = (props) => {
-  const [currentUser] = useContext(LoginUserContext);
-
-  const [user, setUser] = useState({
-    name: currentUser.name,
-    email: currentUser.email, 
-    password: currentUser.password
-  })
+  const [currentUser, setCurrentUser] = useContext(LoginUserContext);
 
   const [isUpdated, setUpdated] = useState(false)
 
   const handleChange = (event) => {
-    const { name, value } = event.target
-    setUser({
-      ...user,
-      [name]: value
+    const { name, value } = event.target;
+    setCurrentUser({
+      ...currentUser,
+      [name]: value,
     })
   }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    const updated = await updateUser(currentUser._id, user)
+    const updated = await updateUser(currentUser._id, currentUser)
     let localUser = JSON.stringify(updated)
     localStorage.setItem('localUser', localUser)
     setUpdated(true)
@@ -45,7 +39,7 @@ const EditUserInfo = (props) => {
             <input
               className="edit-input"
               placeholder='Name'
-              value={user.name}
+              value={currentUser.name}
               name="name"
               required
               autoFocus
@@ -57,7 +51,7 @@ const EditUserInfo = (props) => {
             <input
               className="edit-input"
               placeholder='Email'
-              value={user.email}
+              value={currentUser.email}
               name="email"
               required
               autoFocus
@@ -69,7 +63,7 @@ const EditUserInfo = (props) => {
             <input
               className="edit-input"
               placeholder='Password'
-              value={user.password}
+              value={currentUser.password}
               name="password"
               required
               autoFocus

@@ -5,24 +5,23 @@ import { LoginUserContext } from "../LoginUser/LoginUserContext"
 import { signIn } from "../../services/users"
 
 function LoginForm(props) {
-  const [setCurrentUser] = useContext(LoginUserContext)
-  const [userInfo, setUserInfo] = useState({ email: "", password: "" })
+  const [currentUser, setCurrentUser] = useContext(LoginUserContext)
+  // const [userInfo, setUserInfo] = useState({ email: "", password: "" })
 
   const [isLoggedIn, setLoggedIn] = useState(false)
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setUserInfo({
-      ...userInfo,
+    setCurrentUser({
+      ...currentUser,
       [name]: value,
     })
-  };
+  }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      let user = await signIn(userInfo)
-      setCurrentUser(user)
+      let user = await signIn(currentUser)
       let localUser = JSON.stringify(user)
       localStorage.setItem('localUser', localUser)
     } catch(error) {
@@ -42,9 +41,9 @@ function LoginForm(props) {
     </Link>
       <form onSubmit={handleSubmit} className='login-form'>
         <label className="sign-l-name" htmlFor="email">Email</label>
-        <input onChange={handleChange} value={userInfo.email} type='text' className="login-email" placeholder='Enter Email' name='email' />
+        <input onChange={handleChange} value={currentUser.email} type='text' className="login-email" placeholder='Enter Email' name='email' />
         <label className="sign-l-name" htmlFor="password">Password</label>
-        <input onChange={handleChange} value={userInfo.password} type='password' className='login-password' placeholder='Enter Password' name='password' />
+        <input onChange={handleChange} value={currentUser.password} type='password' className='login-password' placeholder='Enter Password' name='password' />
         <button className="basic-button" type='submit'>Login</button>
         </form>
     </div>

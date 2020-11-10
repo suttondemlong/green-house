@@ -44,8 +44,10 @@ function Password(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    const updated = await updateUser(currentUser._id, password )
-    setUpdated(updated)
+    const updated = await updateUser(currentUser._id, password)
+    let localUser = JSON.stringify(updated)
+    localStorage.setItem('currentUser', localUser)
+    setUpdated(true)
   }
 
   if (isUpdated) {
