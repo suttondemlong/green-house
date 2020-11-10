@@ -18,7 +18,7 @@ function Password(props) {
   useEffect(() => {
     if (((password.password === '') && (passwordConfirm.password === ''))) {
       setMessage()
-    } else if (password.password == passwordConfirm.password) {
+    } else if (password.password === passwordConfirm.password) {
       setMessage('Passwords matched!')
     } else if (password.password === '') {
       setMessage('Please enter new password')
