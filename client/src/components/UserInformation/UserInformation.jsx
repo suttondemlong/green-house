@@ -5,7 +5,7 @@ import EditImageComp from '../EditImageComp/EditImageComp';
 
 
 function UserInformation(props) {
-  const [currentUser] = useContext(LoginUserContext)
+  const currentUser = useContext(LoginUserContext)
   const [toggle, setToggle] = useState(false)
 
   const handleClick = () => {

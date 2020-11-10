@@ -4,7 +4,7 @@ import { LoginUserContext } from "../../components/LoginUser/LoginUserContext"
 import { Link } from "react-router-dom";
 
 function UserVerification(props) {
-  const [currentUser]= useContext(LoginUserContext);
+  const currentUser= useContext(LoginUserContext);
   
   return (
     <div>
