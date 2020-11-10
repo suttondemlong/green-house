@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useState, useContext} from 'react';
 import './EditUserInfo.css';
 import { Redirect } from 'react-router-dom';
 import Layout from '../../components/shared/Layout/Layout';

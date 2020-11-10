@@ -48,7 +48,6 @@ export const deleteUser = async id => {
 export const signIn = async(credential) => {
   try {
     const response = await api.post(`/signin`, credential)
-    // console.log(response)
     return response.data
   } catch (error) {
     throw error

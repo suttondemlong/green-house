@@ -1,11 +1,11 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {Link, Redirect} from 'react-router-dom'
 import "./LoginForm.css"
 import { LoginUserContext } from "../LoginUser/LoginUserContext"
 import { signIn } from "../../services/users"
 
 function LoginForm(props) {
-  const [currentUser, setCurrentUser] = useContext(LoginUserContext)
+  const [setCurrentUser] = useContext(LoginUserContext)
   const [userInfo, setUserInfo] = useState({ email: "", password: "" })
 
   const [isLoggedIn, setLoggedIn] = useState(false)

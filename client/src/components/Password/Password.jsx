@@ -24,6 +24,10 @@ function Password(props) {
       setMessage('Please enter new password')
     } else if (passwordConfirm.password === '') {
       setMessage('Please enter confirmed password')
+
+      setMessage('No input detected')
+    } else if (password.password === passwordConfirm.password) {
+      setMessage('Successfully created password')
     } else {
       setMessage('Invalid password: Inputs do not match')
     }
@@ -57,6 +61,9 @@ function Password(props) {
     } else {
       setMessage("Unable to process change: Make sure inputs match")
     }
+    const updated = await updateUser(currentUser._id, password )
+    setUpdated(updated)
+  }
 
   if (isUpdated) {
     return <Redirect to={`/MyAccount`} />
