@@ -1,5 +1,4 @@
 .articles {
-  width: 90vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -10,4 +9,3 @@
   text-decoration: none;
   color: #3d3c3c;
 }
-
