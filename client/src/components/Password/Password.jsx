@@ -18,22 +18,18 @@ function Password(props) {
   useEffect(() => {
     if (((password.password === '') && (passwordConfirm.password === ''))) {
       setMessage()
-    } else if (password.password == passwordConfirm.password) {
+    } else if (password.password === passwordConfirm.password) {
       setMessage('Passwords matched!')
     } else if (password.password === '') {
       setMessage('Please enter new password')
     } else if (passwordConfirm.password === '') {
       setMessage('Please enter confirmed password')
-
-      setMessage('No input detected')
     } else if (password.password === passwordConfirm.password) {
       setMessage('Successfully created password')
     } else {
       setMessage('Invalid password: Inputs do not match')
     }
   }, [password, passwordConfirm])
-
-  const [isUpdated, setUpdated] = useState(false)
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -56,17 +52,10 @@ function Password(props) {
       const updated = await updateUser(currentUser._id, password )
       let localUser = JSON.stringify(updated)
       localStorage.setItem('localUser', localUser)
-      setUpdated(true)
       window.location.reload()
     } else {
       setMessage("Unable to process change: Make sure inputs match")
     }
-    const updated = await updateUser(currentUser._id, password )
-    setUpdated(updated)
-  }
-
-  if (isUpdated) {
-    return <Redirect to={`/MyAccount`} />
   }
 
   return (

@@ -6,7 +6,7 @@ function LoginUserProvider(props) {
   
   useEffect(() => {
     let user = localStorage.getItem('localUser')
-    user ? setCurrentUser(JSON.parse(user)) : setCurrentUser(null)
+    user ? setCurrentUser(JSON.parse(user)) : setCurrentUser('')
   }, []);
 
   return (

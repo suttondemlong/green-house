@@ -76,8 +76,11 @@ const EditUserInfo = (props) => {
               autoFocus
               onChange={handleChange}
             />
-          </label>
-          <button type='submit' className="basic-button">Save</button>
+          </label> 
+              <button
+                type='submit'
+                className="basic-button"
+              >Save</button>
         </form>
       </div>
     </Layout>
