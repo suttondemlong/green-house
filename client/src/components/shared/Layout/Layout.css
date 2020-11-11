@@ -1,5 +1,4 @@
 .layout {
-  height: 100vh;
   display: -webkit-flex;
   flex-direction: column;
 }
