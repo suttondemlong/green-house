@@ -7,7 +7,7 @@ Team Members:
 - Amber Moore
 - Dean Leong
 - Geoff LaPorte
-- Sutton Demlong - git Czar
+- Sutton Demlong
 
 # Whimsical
 
@@ -43,16 +43,3 @@ const Article = new Schema(
   { timestamps: true }
 );
 ```
-
-# MVP
-
-[GreenHouse WorkFlow](https://github.com/suttondemlong/green-house/projects/1)
-
-# Post-MVP
-
-- Create concept of one instance of a "User"
-- Create DB instances for "Equipment"
-- Execute Equipment page
-- Execute Dashboard page
-- Create functionality of "Add Equipment"
-- Create JS dynamic update of dashboard information (i.e. Cost Savings, Water Savings, Energy Savings, etc.)
