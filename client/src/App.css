@@ -34,4 +34,7 @@
     width: 150px;
     height: 30px;
   }
+  #page-title {
+    font-size: 30px;
+  }
 }
