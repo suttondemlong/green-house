@@ -2,12 +2,19 @@
 
 [Deployed Site](https://green-house-adirondack-phoenix.netlify.app/)
 
-Team Members:
+Developers:
 
 - Amber Moore
 - Dean Leong
 - Geoff LaPorte
 - Sutton Demlong
+
+Designers:
+
+- Angelica Villa
+- David Russo
+- Jorge Vega
+- Nichole Tyler
 
 # Whimsical
 
